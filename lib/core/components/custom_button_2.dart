@@ -1,32 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart'; 
-
-class CustomButton extends StatelessWidget {
+class CustomButton2 extends StatelessWidget {
   final String label;
-  final Function onPressed;
+  final VoidCallback onPressed;
 
-  const CustomButton({Key? key, required this.label, required this.onPressed}): super(key: key);
+  const CustomButton2({Key? key, required this.label, required this.onPressed})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () => onPressed(),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.secondary,
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-        textStyle: const TextStyle(color: Colors.white,fontSize: 16,fontWeight: FontWeight.w200,),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(25),
+    return SizedBox(
+      width: 183, 
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.secondary,
+          padding: const EdgeInsets.symmetric(vertical: 15), 
+          shape: RoundedRectangleBorder(
+            borderRadius:
+                BorderRadius.circular(10), 
+          ),
+        ),
+        child: Text(
+          label,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 18, 
+            fontWeight: FontWeight.w500, 
+          ),
         ),
       ),
-      child: Text(label),
     );
   }
 }
-// this custom button of :
-//Get started/
-// NID Verfication 2 (Confirmation) / 
-//Pop-Up Message1 / 
-//Admin Verify / 
-//all medical history/ 
-

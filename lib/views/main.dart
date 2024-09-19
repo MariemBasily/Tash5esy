@@ -6,7 +6,6 @@ import 'package:tash5esy_app/views/home_screen_locked/home_screen_locked.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
-
   runApp(
     EasyLocalization(
       supportedLocales: [Locale('en'), Locale('ar')],

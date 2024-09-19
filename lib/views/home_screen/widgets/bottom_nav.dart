@@ -19,7 +19,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(items: <BottomNavigationBarItem>[
+    return BottomNavigationBar(items: const <BottomNavigationBarItem>[
       BottomNavigationBarItem(
           icon: Icon(Icons.home_rounded), label: "Home"),
       BottomNavigationBarItem(
@@ -31,8 +31,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
     selectedItemColor: AppColors.secondary,
     onTap: _onItemTap,
     iconSize: 20,
-    selectedLabelStyle: TextStyle(fontFamily: "SourceCodePro", fontWeight: FontWeight.w700, fontSize: 12),
-    unselectedLabelStyle: TextStyle(fontFamily: "SourceCodePro", fontWeight: FontWeight.w700, fontSize: 10),
+    selectedLabelStyle: const TextStyle(fontFamily: "SourceCodePro", fontWeight: FontWeight.w700, fontSize: 12),
+    unselectedLabelStyle: const TextStyle(fontFamily: "SourceCodePro", fontWeight: FontWeight.w700, fontSize: 10),
     backgroundColor: Colors.white,
     
     );

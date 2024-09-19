@@ -13,9 +13,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Stack(
-        children: [Align(
+        children: [
+        const Align(
           alignment: Alignment.topCenter,
           child: HomeContainer(),
         ),
@@ -26,6 +27,14 @@ class _HomeScreenState extends State<HomeScreen> {
           child: HomeCard(
             text: "Medical\nHistory",
             imagePath: "assets/images/medical history.png",
+            click: (){}
+            // Will Put the destinaion after they're made
+            //  => Navigator.push(
+            //   context,
+            //  MaterialPageRoute(
+            //   builder: (context) => MedicalHistoryScreen()
+            //   )
+            // )
           )
           ),
           Positioned(
@@ -35,7 +44,8 @@ class _HomeScreenState extends State<HomeScreen> {
           child: HomeCard(
             text: "Visits",
             imagePath: "assets/images/visits.png",
-          )
+            click: () {}
+            )
           ),
           Positioned(
           bottom: 50,
@@ -44,9 +54,10 @@ class _HomeScreenState extends State<HomeScreen> {
           child: HomeCard(
             text: "Documents",
             imagePath: "assets/images/documents.png",
+            click: () {},
           )
           ),
-          Align(
+          const Align(
             alignment: Alignment.bottomCenter,
             child:  BottomNavigation(),
           )

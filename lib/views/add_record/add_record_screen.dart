@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/components/custom_button.dart';
-import 'package:tash5esy_app/core/components/custom_button_2.dart';
-import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/add_record/widgets/widget.dart';
 import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
-
 
 class AddRecordScreen extends StatelessWidget {
   @override
@@ -21,8 +18,8 @@ class AddRecordScreen extends StatelessWidget {
              width: 117, 
              height: 152,
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'You Have Not\nAdded Any Medical\nRecords Yet',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -34,29 +31,18 @@ class AddRecordScreen extends StatelessWidget {
           ],
         ),
       ),
-       CustomButton
-    // bottomNavigationBar: Padding(
-    //     padding: const EdgeInsets.all(16.0),
-    //     style: ElevatedButton.styleFrom(
-    //        backgroundColor: AppColors.secondary,
-    //     child: Text('Add Records', style: TextStyle(fontSize: 18 ,color: Colors.white,) ),
-    //     onPressed: () {
-    //     Navigator.push(
-    //     context, MaterialPageRoute(builder: (builder) => MedicalHistoryScreen()));
-    //       },
-    //     ),
-    //   ),
-
-        
-        // child: CustomButton(
-        // text: 'Add Records',
-        //   onPressed: () {
-        //     Navigator.push(
-        //         context, MaterialPageRoute(builder: (builder) => MedicalHistoryScreen()));
-        //   }, label: 'Add Records', style:TextStyle(fontSize: 20 ,color:Colors.white), 
-        //   Text('Add Records', style: TextStyle(fontSize: 18 ,color: Colors.white) ),
-        // ),
-     
+       bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: CustomButton(
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (builder) => MedicalHistoryScreen()));
+          },
+          label: 'Add Records',
+          text: '',
+          child: const Text('Add Records', style: TextStyle(fontSize: 18 ,color: Colors.white) ),
+        ),
+      ),
     );
   }
 }

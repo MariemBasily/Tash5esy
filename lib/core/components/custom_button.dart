@@ -5,7 +5,7 @@ class CustomButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
 
-  const CustomButton({required this.label, required this.onPressed});
+  const CustomButton( {required this.label, required this.onPressed, required String text, required Text child});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,13 @@ class CustomButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
         textStyle: const TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w200),
       ),
-      child: Text(label),
+     child: Text(
+        label,
+        style: TextStyle(
+          color: Colors.white, // Set label text color to white
+          fontSize: 18, // Optional: font size adjustment
+        ),
+      ),
     );
   }
 }

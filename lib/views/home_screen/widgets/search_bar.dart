@@ -8,7 +8,7 @@ class SimpleSearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         height: 40,
         width: 280,
         decoration: BoxDecoration(
@@ -18,7 +18,7 @@ class SimpleSearchBar extends StatelessWidget {
         child: Row(
           children: [
             Icon(Icons.search_rounded, color: AppColors.secondary, size: 20),
-            SizedBox(width: 8),
+           const SizedBox(width: 8),
             Text(
               "Search...",
               style: TextStyle(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
+import 'package:tash5esy_app/views/home_screen_locked/home_screen_locked.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      home: HomeScreen(),
+      // home: HomeScreen(),
     );
   }
 }

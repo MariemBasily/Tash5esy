@@ -7,7 +7,7 @@ import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 class DemoScreen extends StatelessWidget {
   DemoScreen({super.key});
 
-  @override
+  // @override
   final demoControl = DemoController();
 
   Widget build(BuildContext context) {

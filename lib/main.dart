@@ -5,6 +5,7 @@ import 'package:tash5esy_app/views/login/login_screen.dart';
 import 'package:tash5esy_app/views/splash/splash_screen.dart';
 import 'package:tash5esy_app/views/get_started/get_started_screen.dart';
 //import 'package:tash5esy_app/views/signup/signup_screen.dart'; 
+// import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();

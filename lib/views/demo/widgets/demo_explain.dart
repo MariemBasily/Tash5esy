@@ -31,7 +31,7 @@ class DemoExplain extends StatelessWidget {
                 fontSize: 19,
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,
-                fontFamily: "Raleway",
+                fontFamily: "raleway",
                 shadows: [
                   Shadow(
                     blurRadius: 3.0,

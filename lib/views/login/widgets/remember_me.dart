@@ -1,4 +1,3 @@
-// views/login/widgets/remember_me_widget.dart
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
@@ -12,7 +11,7 @@ class RememberMeWidget extends StatelessWidget {
         Row(
           children: [
             Checkbox(value: false, onChanged: (bool? value) {}),
-            Text('Remember me').tr(),
+            Text('Remember me'.tr()),
           ],
         ),
         TextButton(

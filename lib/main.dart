@@ -4,7 +4,7 @@ import 'package:tash5esy_app/models/splash_model.dart';
 import 'package:tash5esy_app/views/login/login_screen.dart';
 import 'package:tash5esy_app/views/splash/splash_screen.dart';
 import 'package:tash5esy_app/views/get_started/get_started_screen.dart';
-//import 'package:tash5esy_app/views/signup/signup_screen.dart'; 
+import 'package:tash5esy_app/views/signup/signup_screen.dart'; 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/get_started': (context) => GetStartedScreen(),
         '/login': (context) => LoginScreen(),
-        //'/signup': (context) => SignupScreen(), 
+        '/signup': (context) => NewAccountScreen(), 
         //'/forgot_password': (context) =>ForgotPasswordScreen(), 
       },
     );

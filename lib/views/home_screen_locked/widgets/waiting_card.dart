@@ -8,7 +8,7 @@ class WaitingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap: () => click(), // Click Now For UI Only --- in the Future it must go automatically aftr verifying
+        onTap: () => click(), // Click Now For UI Only --- in the Future it must go automatically aftr verifying == No Need For Controller Here Now
         child: Container(
           height: 50,
           width: 180,
@@ -19,7 +19,7 @@ class WaitingCard extends StatelessWidget {
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 19,
-                fontFamily: "SourceCodePro"),
+                fontFamily: "SourceSans3"),
           ),
         ));
   }

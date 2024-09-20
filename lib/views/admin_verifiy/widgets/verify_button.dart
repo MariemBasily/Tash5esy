@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
-import 'package:tash5esy_app/views/demo/demo_screen.dart';
 
 class VerifyButton extends StatelessWidget {
-  const VerifyButton({super.key});
+
+final VoidCallback onPressed; // Will be excuted when an event happen
+
+  const VerifyButton({super.key, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -11,20 +13,17 @@ class VerifyButton extends StatelessWidget {
       width: 180,
       height: 40,
       child: ElevatedButton(
-        onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => const DemoScreen()));
-        },
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
          backgroundColor: AppColors.secondary,
          shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10)
          ),
-        ),
+        ), 
         child: const Text(
           "Continue",
           style: TextStyle(
-            fontFamily: "SourceCodePro",
+            fontFamily: "SourceSans3",
             fontSize: 15,
             fontWeight: FontWeight.w700,
             color: Colors.white

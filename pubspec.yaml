@@ -82,6 +82,12 @@ flutter:
     - family: SourceCodePro 
       fonts: 
         - asset: assets/fonts/SourceSansPro.ttf
+    - family: SourceSans3
+      fonts: 
+        - asset: assets/fonts/SourceSans3.ttf
+    - family: Raleway
+      fonts: 
+        - asset: assets/fonts/Raleway.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -9,22 +9,22 @@ class HomeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body:Stack(
-         children: [
+        children: [
             Container(
           decoration: BoxDecoration(
           color: AppColors.primary,
           borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(40), bottomRight: Radius.circular(40)),
         ),
         height: 220,
-             ),
-             const Positioned(
+            ),
+            const Positioned(
               top: 30,
               left: 20,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start, //start from left
                 children: [
                   SizedBox(height: 20),
-               Text(
+              Text(
                 "👋🏻Hello Ahmed", 
                 style: TextStyle(
                   fontSize: 24,
@@ -34,9 +34,9 @@ class HomeContainer extends StatelessWidget {
                 ),
                 ),
                 SizedBox(height: 8),
-               Text(
+              Text(
                 "   Start With Your Medical Record",
-                 style: TextStyle(
+                style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w200,
                   fontFamily: "SourceCodePro",
@@ -47,7 +47,7 @@ class HomeContainer extends StatelessWidget {
             SimpleSearchBar()
                 ],
               )
-             ),
+            ),
         ]),    
         );      
   }

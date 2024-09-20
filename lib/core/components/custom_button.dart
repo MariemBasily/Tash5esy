@@ -1,25 +1,44 @@
 import 'package:flutter/material.dart';
-import 'package:tash5esy_app/core/style/colors.dart'; 
+import 'package:tash5esy_app/core/style/colors.dart';
 
 class CustomButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
 
-  const CustomButton({required this.label, required this.onPressed});
+  const CustomButton({
+    Key? key,
+    required this.label,
+    required this.onPressed,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.secondary,
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-        textStyle: const TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w200),
+    return Center(
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.secondary, 
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30), 
+),
+          minimumSize: const Size(200, 50), 
+          padding: const EdgeInsets.symmetric(
+              vertical: 10, horizontal: 60),
+        ),
+        child: Text(
+          label,
+          style: const TextStyle(
+            color: Colors.white, 
+            fontSize: 18, 
+            fontWeight: FontWeight.bold, 
+          ),
+        ),
       ),
-      child: Text(label),
     );
   }
 }
+
+
  // this custom button of :
  //login page/
  // sign up page/ 

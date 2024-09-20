@@ -16,10 +16,10 @@ class VerifyButton extends StatelessWidget {
               context, MaterialPageRoute(builder: (context) => const DemoScreen()));
         },
         style: ElevatedButton.styleFrom(
-         backgroundColor: AppColors.secondary,
-         shape: RoundedRectangleBorder(
+        backgroundColor: AppColors.secondary,
+        shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10)
-         ),
+        ),
         ),
         child: const Text(
           "Continue",

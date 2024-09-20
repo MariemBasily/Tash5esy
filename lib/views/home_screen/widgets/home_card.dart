@@ -18,11 +18,11 @@ class HomeCard extends StatelessWidget {
           onTap: () => click(),
           child: Container(
             height: 80,
-             margin: const EdgeInsets.all(40),
-             decoration: BoxDecoration(
+            margin: const EdgeInsets.all(40),
+            decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color:const Color.fromARGB(30, 0, 122, 255),
-             ),
+            ),
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: Row(

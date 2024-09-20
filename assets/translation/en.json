@@ -4,6 +4,16 @@
     "welcome_to": "Welcome to ",
     "description":"Welcome to Tash5esy, your dedicated health portal where you can easily access and manage your medical records and stay informed about your health by enhancing your knowledge of your health and controlling your well-being.",
     "tash": "Tash",
-    "5esy": "5esy"
+    "5esy": "5esy",
+    "login": "Login",
+    "national_id": "National ID",
+    "password": "Password",
+    "remember_me": "Remember me",
+    "forget_password": "Forget Password?",
+    "login_successful": "Login successful!",
+    "fill_all_fields": "Please fill in all fields.",
+    "national_id_empty": "National ID cannot be empty",
+    "password_empty": "Password cannot be empty",
+    "national_id_hint": "E.G., 123-456-7890",
+    "password_hint": "******"
 }
-

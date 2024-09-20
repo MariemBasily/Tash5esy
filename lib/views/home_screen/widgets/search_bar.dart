@@ -18,7 +18,7 @@ class SimpleSearchBar extends StatelessWidget {
         child: Row(
           children: [
             Icon(Icons.search_rounded, color: AppColors.secondary, size: 20),
-           const SizedBox(width: 8),
+          const SizedBox(width: 8),
             Text(
               "Search...",
               style: TextStyle(

@@ -29,7 +29,7 @@ class HomeContainer extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
-                  fontFamily: "SourceCodePro",
+                  fontFamily: "SourceSans3",
                   color: Colors.white
                 ),
                 ),
@@ -39,7 +39,7 @@ class HomeContainer extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w200,
-                  fontFamily: "SourceCodePro",
+                  fontFamily: "SourceSans3",
                   color: Colors.white
                 ),
             ),

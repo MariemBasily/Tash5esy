@@ -31,8 +31,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
     selectedItemColor: AppColors.secondary,
     onTap: _onItemTap,
     iconSize: 20,
-    selectedLabelStyle: const TextStyle(fontFamily: "SourceCodePro", fontWeight: FontWeight.w700, fontSize: 12),
-    unselectedLabelStyle: const TextStyle(fontFamily: "SourceCodePro", fontWeight: FontWeight.w700, fontSize: 10),
+    selectedLabelStyle: const TextStyle(fontFamily: "SourceSans3", fontWeight: FontWeight.w700, fontSize: 12),
+    unselectedLabelStyle: const TextStyle(fontFamily: "SourceSans3", fontWeight: FontWeight.w700, fontSize: 10),
     backgroundColor: Colors.white,
     
     );

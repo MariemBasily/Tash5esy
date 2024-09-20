@@ -33,7 +33,7 @@ class HomeCard extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w900,
-                          fontFamily: "SourceCodePro",
+                          fontFamily: "SourceSans3",
                           color: AppColors.secondary),
                     ),
                     Image.asset(imagePath),

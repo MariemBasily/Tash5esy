@@ -3,7 +3,10 @@ import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/admin_verifiy/widgets/verify_button.dart';
 
 class VerifyCard extends StatelessWidget {
-  const VerifyCard({super.key});
+
+  final VoidCallback onVerify;
+
+  const VerifyCard({super.key, required this.onVerify});
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +32,11 @@ class VerifyCard extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "SourceCodePro",
+                              fontFamily: "SourceSans3",
                               color: AppColors.primary),
                         ),
                         const SizedBox(height: 20),
-                        const VerifyButton()
+                        VerifyButton(onPressed: onVerify)
                       ],
                     ),
                   ),

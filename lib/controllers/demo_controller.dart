@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/views/demo/demo_screen_2.dart';
+import 'package:tash5esy_app/views/demo/demo_screen_3.dart';
 
 class DemoController {
-  void nextPress(BuildContext context) {
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const DemoScreen2()));
+  void nextPress1(BuildContext context) {
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DemoScreen2()));
+  }
+  void nextPress2(BuildContext context) {
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DemoScreen3()));
   }
 }

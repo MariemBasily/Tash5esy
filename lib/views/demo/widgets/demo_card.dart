@@ -28,6 +28,7 @@ class DemoCard extends StatelessWidget {
               Text(
                 text,
                 style: TextStyle(
+                   decoration: TextDecoration.none,
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                     fontFamily: "SourceSans3",

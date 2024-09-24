@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
-class DemoExplain extends StatelessWidget {
+class DemoExplainCard2 extends StatelessWidget {
   final String text;
   final String imagePath;
   final VoidCallback onPress;
-  const DemoExplain({super.key, required this.text, required this.imagePath, required this.onPress});
+  const DemoExplainCard2({super.key, required this.text, required this.imagePath, required this.onPress});
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +13,7 @@ class DemoExplain extends StatelessWidget {
       Container(
           width: 280,
           height: 200,
+          margin: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.9),
             borderRadius: BorderRadius.circular(30),
@@ -28,10 +29,11 @@ class DemoExplain extends StatelessWidget {
             textAlign: TextAlign.center,
             text,
             style: TextStyle(
-                fontSize: 19,
+               decoration: TextDecoration.none,
+                fontSize: 17,
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,
-                fontFamily: "Raleway",
+                fontFamily: "raleway",
                 shadows: [
                   Shadow(
                     blurRadius: 3.0,
@@ -43,18 +45,18 @@ class DemoExplain extends StatelessWidget {
           )),
       Positioned(
           bottom: 10,
-          right: 10,
+          left: 5,
           child: Image.asset(
             imagePath,
-            height: 120,
+            width: 190,
           )),
       Positioned(
-          bottom: 25,
-          left: 25,
+          bottom: 30,
+          right: 30,
           child: ElevatedButton(
             onPressed: onPress,
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary),
-            child: Text("Next",
+            child:const Text("Next",
                 style: TextStyle(
                     fontFamily: "SourceSans3",
                     fontSize: 15,

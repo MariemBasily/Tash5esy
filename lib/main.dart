@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:tash5esy_app/controller_screen.dart';
 import 'package:tash5esy_app/models/splash_model.dart';
+import 'package:tash5esy_app/views/home_screen_locked/home_screen_locked.dart';
 import 'package:tash5esy_app/views/login/login_screen.dart';
 import 'package:tash5esy_app/views/splash/splash_screen.dart';
 import 'package:tash5esy_app/views/get_started/get_started_screen.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         '/get_started': (context) => GetStartedScreen(),
         '/login': (context) => LoginScreen(),
         '/signup': (context) => NewAccountScreen(), 
-        //'/forgot_password': (context) =>ForgotPasswordScreen(), 
+        // '/forgot_password': (context) =>ForgotPasswordScreen(), 
       },
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/home_controller.dart';
-import 'package:tash5esy_app/core/components/bottom_navigation.dart';
 import 'package:tash5esy_app/views/home_screen/widgets/home_card.dart';
 import 'package:tash5esy_app/views/home_screen/widgets/home_container.dart';
 
@@ -53,10 +52,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 // _controller.navigateToDocuments(context);
               },
             )),
-        const Align(
-          alignment: Alignment.bottomCenter,
-          child: BottomNavigation(),
-        )
       ]),
     );
   }

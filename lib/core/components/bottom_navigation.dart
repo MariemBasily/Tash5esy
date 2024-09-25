@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
+import 'package:tash5esy_app/views/home_screen/home_screen.dart';
+import 'package:tash5esy_app/views/notifications/notifications_screen.dart';
+// import 'package:tash5esy_app/views/profile/profile_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -11,7 +14,13 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   int _selectedIndex = 0;
 
-  void _onItemTap(int index) {
+  final List<Widget> _screens = [
+    const HomeScreen(),
+    const NotificationScreen(),
+    // const ProfileScreen(),
+  ];
+
+  _onItemTap(int index) {
     setState(() {
       _selectedIndex = index;
     });
@@ -19,22 +28,26 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(items: const <BottomNavigationBarItem>[
-      BottomNavigationBarItem(
-          icon: Icon(Icons.home_rounded), label: "Home"),
-      BottomNavigationBarItem(
-          icon: Icon(Icons.notifications), label: "Notifications"),
-      BottomNavigationBarItem(
-          icon: Icon(Icons.person), label: "Profile"),
-    ],
-    currentIndex: _selectedIndex,
-    selectedItemColor: AppColors.secondary,
-    onTap: _onItemTap,
-    iconSize: 20,
-    selectedLabelStyle: const TextStyle(fontFamily: "SourceSans3", fontWeight: FontWeight.w700, fontSize: 12),
-    unselectedLabelStyle: const TextStyle(fontFamily: "SourceSans3", fontWeight: FontWeight.w700, fontSize: 10),
-    backgroundColor: Colors.white,
-    
+    return Scaffold(
+      body: _screens.elementAt(_selectedIndex),
+      bottomNavigationBar: BottomNavigationBar(
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(icon: Icon(Icons.home_rounded), label: "Home"),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.notifications), label: "Notifications"),
+        BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+      ],
+       onTap: _onItemTap,
+      currentIndex: _selectedIndex,
+      selectedItemColor: AppColors.secondary,
+      iconSize: 20,
+      selectedLabelStyle: const TextStyle(
+          fontFamily: "SourceSans3", fontWeight: FontWeight.w700, fontSize: 12),
+      unselectedLabelStyle: const TextStyle(
+          fontFamily: "SourceSans3", fontWeight: FontWeight.w700, fontSize: 10),
+      backgroundColor: Colors.white,
+    )
     );
   }
+    
 }

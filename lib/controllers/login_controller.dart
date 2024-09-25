@@ -9,56 +9,47 @@ class LoginController {
   String? nationalIdError;
   String? passwordError;
 
-  // Validate and return UserLoginModel if valid
   UserloginModel? login() {
     final nationalId = nationalIdController.text;
     final password = passwordController.text;
 
-    // Reset errors before validating
     nationalIdError = null;
     passwordError = null;
 
-    // Perform National ID validation: must be exactly 14 digits
+    // National ID Validation
     if (nationalId.isEmpty) {
-      nationalIdError = "National ID cannot be empty".tr();
+      nationalIdError = "National ID cannot be empty.".tr();
     } else if (!_isValidNationalId(nationalId)) {
       nationalIdError = "National ID must be 14 digits.".tr();
     }
 
-    // Perform Password validation: must be at least 6 characters, contain symbols, numbers, lowercase, and uppercase
+    // Password Validation
     if (password.isEmpty) {
-      passwordError = "Password cannot be empty".tr();
+      passwordError = "Password cannot be empty.".tr();
     } else if (!_isValidPassword(password)) {
       passwordError =
-          "Password must be at least 6 characters,"
-          "must contain upper & lower case letters &" 
-          "numbers,and symbols.".tr();
+          "Password must be at least 6 characters, with letters, numbers, and symbols."
+              .tr();
     }
 
-    // If no errors, return the model
     if (nationalIdError == null && passwordError == null) {
       return UserloginModel(nationalId: nationalId, password: password);
     }
     return null;
   }
 
-  // Dispose controllers when not needed
   void dispose() {
     nationalIdController.dispose();
     passwordController.dispose();
   }
 
-  // Helper function to validate the National ID (exactly 14 digits)
   bool _isValidNationalId(String nationalId) {
-    final RegExp idRegExp = RegExp(r'^\d{14}$'.tr()); // Only 14 digits
-    return idRegExp.hasMatch(nationalId);
+    return RegExp(r'^\d{14}$').hasMatch(nationalId);
   }
 
-  // Helper function to validate password (min 6 characters, with special conditions)
   bool _isValidPassword(String password) {
-    final RegExp passwordRegExp = RegExp(
-      r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$'.tr(),
-    );
-    return passwordRegExp.hasMatch(password);
+    return RegExp(
+      r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$',
+    ).hasMatch(password);
   }
 }

@@ -42,6 +42,22 @@
     "don’t_have_account": "لا تملك حساباً؟",
     "national_id_error": "يجب أن يتكون الرقم القومي من 14 رقما.",
     "password_error": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل، تحتوي على أحرف كبيرة وصغيرة، أرقام، ورموز.",
-    "sign_up": "إنشاء حساب"
+    "sign_up": "إنشاء حساب",
+    "verify_phone_number": "تحقق من رقم الهاتف",
+    "enter_6_digit": "أدخل الرقم المكون من 6 أرقام الذي أرسلناه إلى",
+    "enter_code": "أدخل الرمز",
+    "didnt_receive": "لم تتلق أي شيء؟",
+    "resend_code": "إعادة إرسال الرمز",
+    "Verify Identity": "تحقق من الهوية",
+    "Take a Photo": "التقط صورة",
+    "Front Of NID Card": "الجهة الأمامية لبطاقة الرقم القومي",
+    "Back Of NID Card": "الجهة الخلفية لبطاقة الرقم القومي",
+    "Take a Front Photo Of Your NID Card": "التقط صورة أمامية لبطاقة الرقم القومي الخاصة بك",
+    "Take a Back Photo Of Your NID Card": "التقط صورة خلفية لبطاقة الرقم القومي الخاصة بك",
+    "Verify My Identity": "تحقق من هويتي",
+    "It’s required by law to verify your identity as a new user": "مطلوب بموجب القانون التحقق من هويتك كمستخدم جديد",
+    "Selfie Photo": "صورة سيلفي",
+    "It’s required by law to verify your identity": "مطلوب بموجب القانون التحقق من هويتك",
+    "Take a selfie": "التقط صورة سيلفي"
 }   
 

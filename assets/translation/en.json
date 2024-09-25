@@ -42,6 +42,19 @@
     "don’t_have_account": "Don’t Have An Account?",
     "national_id_error": "National ID must be 14 digits.",
     "password_error": "Password must be at least 6 characters, must contain upper & lower case letters, numbers, and symbols.",
-    "sign_up": "Sign Up"
-
+    "sign_up": "Sign Up",
+    "verify_phone_number": "Verify Phone Number",
+    "enter_6_digit": "Enter The 6-digit Number That We Sent To",
+    "enter_code": "Enter the code",
+    "didnt_receive": "Didn’t receive anything?",
+    "resend_code": "Resend Code",
+    "Verify Identity": "Verify Identity",
+    "Take a Photo": "Take a Photo",
+    "Front Of NID Card": "Front Of NID Card",
+    "Back Of NID Card": "Back Of NID Card",
+    "Verify My Identity": "Verify My Identity",
+    "It’s required by law to verify your identity as a new user": "It’s required by law to verify your identity as a new user",
+    "Selfie Photo": "Selfie Photo",
+    "It’s required by law to verify your identity": "It’s required by law to verify your identity",
+    "Take a selfie": "Take a selfie"
 }

@@ -1,5 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/controllers/demo_controller.dart';
+import 'package:tash5esy_app/views/demo/widgets/demo_card.dart';
+import 'package:tash5esy_app/views/demo/widgets/demo_explain_card3.dart';
+import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 import 'package:tash5esy_app/controllers/demo_controller.dart';
 import 'package:tash5esy_app/views/demo/widgets/demo_card.dart';
 import 'package:tash5esy_app/views/demo/widgets/demo_explain_card3.dart';
@@ -7,6 +12,9 @@ import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 
 class DemoScreen3 extends StatelessWidget {
   DemoScreen3({super.key});
+
+  // @override
+  final demoControl = DemoController();
 
   // @override
   final demoControl = DemoController();

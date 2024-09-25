@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/home_screen/widgets/search_bar.dart';
@@ -28,6 +29,8 @@ class HomeContainer extends StatelessWidget {
               Text(
                 "👋🏻hello_ahmed".tr(), 
                 style: const TextStyle(
+                "👋🏻hello_ahmed".tr(), 
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
                   fontFamily: "SourceSans3",
@@ -36,6 +39,8 @@ class HomeContainer extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
               Text(
+                "   start".tr(),
+                style: const TextStyle(
                 "   start".tr(),
                 style: const TextStyle(
                   fontSize: 14,

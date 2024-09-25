@@ -1,6 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
+import 'package:tash5esy_app/views/home_screen/home_screen.dart';
+import 'package:tash5esy_app/views/notifications/notifications_screen.dart';
+// import 'package:tash5esy_app/views/profile/profile_screen.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 import 'package:tash5esy_app/views/notifications/notifications_screen.dart';
 // import 'package:tash5esy_app/views/profile/profile_screen.dart';
@@ -15,6 +19,13 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   int _selectedIndex = 0;
 
+  final List<Widget> _screens = [
+    const HomeScreen(),
+    const NotificationScreen(),
+    // const ProfileScreen(),
+  ];
+
+  _onItemTap(int index) {
   final List<Widget> _screens = [
     const HomeScreen(),
     const NotificationScreen(),
@@ -50,5 +61,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
     )
     );
   }
+    
     
 }

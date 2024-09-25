@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
@@ -20,9 +21,9 @@ final VoidCallback onPressed; // Will be excuted when an event happen
           borderRadius: BorderRadius.circular(10)
         ),
         ),
-        child: const Text(
-          "Continue",
-          style: TextStyle(
+        child: Text(
+          "continue".tr(),
+          style: const TextStyle(
             fontFamily: "SourceSans3",
             fontSize: 15,
             fontWeight: FontWeight.w700,

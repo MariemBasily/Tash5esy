@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/admin_verifiy/widgets/verify_button.dart';
@@ -28,7 +29,7 @@ class VerifyCard extends StatelessWidget {
                       children: [
                         Text(
                           textAlign: TextAlign.center,
-                          "Your Identity is Verified by the Admins",
+                          "done_verfi".tr(),
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,

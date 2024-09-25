@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
@@ -18,7 +19,7 @@ class NotificationTodayWidget extends StatelessWidget {
                         shape: BoxShape.rectangle),
                     child: Text(
                       textAlign: TextAlign.center,
-                      "Today",
+                      "today".tr(),
                       style: TextStyle(
                           fontFamily: "SourceSans3",
                           fontSize: 18,
@@ -27,7 +28,7 @@ class NotificationTodayWidget extends StatelessWidget {
                           ),
                     )),
                     trailing: Text(
-                      "Mark all",
+                      "mark_all".tr(),
                       style: TextStyle(
                         fontFamily: "SourceSans3",
                         fontSize: 15,
@@ -51,7 +52,7 @@ class NotificationTodayWidget extends StatelessWidget {
           const Icon(Icons.calendar_month_outlined,  color: Colors.white),
         ]),
           title: Text(
-            "Scheduled appointment",
+            "scheduled_appointment".tr(),
             style: TextStyle(
               fontFamily: "SourceSans3",
               fontSize: 15,
@@ -59,16 +60,16 @@ class NotificationTodayWidget extends StatelessWidget {
               color: AppColors.primary
             ),
             ),
-            subtitle: const Text(
+            subtitle: Text(
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              style: TextStyle(fontFamily: "SourceSans3", fontSize: 12),
+              "lorem".tr(),
+              style: const TextStyle(fontFamily: "SourceSans3", fontSize: 12),
               ),
               trailing: Column(
                  mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text("2m"),
+                  Text("2m".tr()),
                   Icon(Icons.check_box_outlined, color: AppColors.green,)
                 ],
               ),
@@ -88,7 +89,7 @@ class NotificationTodayWidget extends StatelessWidget {
           const Icon(Icons.calendar_month_outlined,  color: Colors.white),
         ]),
           title: Text(
-            "Scheduled Change",
+            "scheduled_change".tr(),
             style: TextStyle(
               fontFamily: "SourceSans3",
               fontSize: 15,
@@ -96,16 +97,16 @@ class NotificationTodayWidget extends StatelessWidget {
               color: AppColors.primary
             ),
             ),
-            subtitle: const Text(
+            subtitle:  Text(
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              style: TextStyle(fontFamily: "SourceSans3", fontSize: 12),
+              "lorem".tr(),
+              style: const TextStyle(fontFamily: "SourceSans3", fontSize: 12),
               ),
               trailing: Column(
                  mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text("1h"),
+                   Text("1h".tr()),
                   Icon(Icons.check_box_outlined, color: AppColors.green,)
                 ],
               ),
@@ -125,7 +126,7 @@ class NotificationTodayWidget extends StatelessWidget {
           const Icon(Icons.calendar_month_outlined,  color: Colors.white),
         ]),
           title: Text(
-            "Medical Notes",
+            "medical_notes".tr(),
             style: TextStyle(
               fontFamily: "SourceSans3",
               fontSize: 15,
@@ -133,16 +134,16 @@ class NotificationTodayWidget extends StatelessWidget {
               color: AppColors.primary
             ),
             ),
-            subtitle: const Text(
+            subtitle: Text(
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              style: TextStyle(fontFamily: "SourceSans3", fontSize: 12),
+              "lorem".tr(),
+              style: const TextStyle(fontFamily: "SourceSans3", fontSize: 12),
               ),
               trailing: Column(
                  mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text("2h"),
+                   Text("2h".tr()),
                   Icon(Icons.check_box_outlined, color: AppColors.green,)
                 ],
               ),

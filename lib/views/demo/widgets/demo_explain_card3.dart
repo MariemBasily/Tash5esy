@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
@@ -56,9 +57,9 @@ class DemoExplainCard3 extends StatelessWidget {
           child: ElevatedButton(
             onPressed: onPress,
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary),
-            child:const Text(
-              "Start",
-              style: TextStyle(
+            child: Text(
+              "startdemo".tr(),
+              style: const TextStyle(
                   fontFamily: "SourceSans3",
                   fontSize: 15,
                   color: Colors.white,

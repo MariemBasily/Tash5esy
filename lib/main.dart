@@ -42,8 +42,6 @@ class MyApp extends StatelessWidget {
         '/phone_verification': (context) => PhoneVerificationScreen(phoneNumber: '',),
         '/home_screen': (context) => HomeScreen(), 
         '/nid_verification1_screen': (context) => IdentityVerificationScreen(), 
-
-
       },
     );
   }

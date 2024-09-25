@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/home_screen/widgets/search_bar.dart';
@@ -17,7 +18,7 @@ class HomeContainer extends StatelessWidget {
         ),
         height: 220,
             ),
-            const Positioned(
+            Positioned(
               top: 30,
               left: 20,
               child: Column(
@@ -25,8 +26,8 @@ class HomeContainer extends StatelessWidget {
                 children: [
                   SizedBox(height: 20),
               Text(
-                "👋🏻Hello Ahmed", 
-                style: TextStyle(
+                "👋🏻hello_ahmed".tr(), 
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
                   fontFamily: "SourceSans3",
@@ -35,8 +36,8 @@ class HomeContainer extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
               Text(
-                "   Start With Your Medical Record",
-                style: TextStyle(
+                "   start".tr(),
+                style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w200,
                   fontFamily: "SourceSans3",

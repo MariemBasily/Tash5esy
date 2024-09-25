@@ -2,11 +2,11 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
-class DemoExplainCard2 extends StatelessWidget {
+class DemoExplainCard3 extends StatelessWidget {
   final String text;
   final String imagePath;
   final VoidCallback onPress;
-  const DemoExplainCard2({super.key, required this.text, required this.imagePath, required this.onPress});
+  const DemoExplainCard3({super.key, required this.text, required this.imagePath, required this.onPress});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class DemoExplainCard2 extends StatelessWidget {
             text,
             style: TextStyle(
                decoration: TextDecoration.none,
-                fontSize: 17,
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,
                 fontFamily: "raleway",
@@ -45,11 +45,11 @@ class DemoExplainCard2 extends StatelessWidget {
                 ]),
           )),
       Positioned(
-          bottom: 10,
-          left: 5,
+          bottom: 20,
+          left: 20,
           child: Image.asset(
             imagePath,
-            width: 190,
+            height: 100,
           )),
       Positioned(
           bottom: 30,
@@ -57,12 +57,13 @@ class DemoExplainCard2 extends StatelessWidget {
           child: ElevatedButton(
             onPressed: onPress,
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary),
-            child: Text("next".tr(),
-                style: const TextStyle(
-                    fontFamily: "SourceSans3",
-                    fontSize: 15,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700)),
+            child: Text(
+              "startdemo".tr(),
+              style: const TextStyle(
+                  fontFamily: "SourceSans3",
+                  fontSize: 15,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600)),
           )),
     ]);
   }

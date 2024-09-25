@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class WaitingCard extends StatelessWidget {
@@ -13,10 +14,10 @@ class WaitingCard extends StatelessWidget {
           height: 50,
           width: 180,
           decoration: BoxDecoration(color: Colors.white.withOpacity(0.9)),
-          child: const Text(
+          child: Text(
             textAlign: TextAlign.center,
-            "Waiting For Confirmation",
-            style: TextStyle(
+            "waiting".tr(),
+            style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 19,
                 fontFamily: "SourceSans3"),

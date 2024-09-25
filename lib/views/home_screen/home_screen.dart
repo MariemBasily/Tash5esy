@@ -1,6 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/home_controller.dart';
-import 'package:tash5esy_app/core/components/bottom_navigation.dart';
 import 'package:tash5esy_app/views/home_screen/widgets/home_card.dart';
 import 'package:tash5esy_app/views/home_screen/widgets/home_container.dart';
 
@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
             left: 10,
             right: 10,
             child: HomeCard(
-                text: "Medical\nHistory",
+                text: "medical_history".tr(),
                 imagePath: "assets/images/medical history.png",
                 click: () {
                   _controller.navigateToMedicalHistory(context);
@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
             left: 10,
             right: 10,
             child: HomeCard(
-                text: "Visits",
+                text: "visits".tr(),
                 imagePath: "assets/images/visits.png",
                 click: () {
                   _controller.navigateToVisits(context);
@@ -47,16 +47,12 @@ class _HomeScreenState extends State<HomeScreen> {
             left: 10,
             right: 10,
             child: HomeCard(
-              text: "Documents",
+              text: "documents".tr(),
               imagePath: "assets/images/documents.png",
               click: () {
                 // _controller.navigateToDocuments(context);
               },
             )),
-        const Align(
-          alignment: Alignment.bottomCenter,
-          child: BottomNavigation(),
-        )
       ]),
     );
   }

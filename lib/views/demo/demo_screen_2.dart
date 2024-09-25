@@ -1,5 +1,4 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/demo_controller.dart';
 import 'package:tash5esy_app/views/demo/widgets/demo_card.dart';
@@ -8,11 +7,7 @@ import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 
 class DemoScreen2 extends StatelessWidget {
   DemoScreen2({super.key});
-
-  // @override
-  
   final demoControl = DemoController();
-
   Widget build(BuildContext context) {
     return Stack(
       children: [
@@ -29,14 +24,12 @@ class DemoScreen2 extends StatelessWidget {
                   right: 10,
                   child: DemoCard(
                     text: "visits".tr(),
-                    text: "visits".tr(),
                     imagePath: "assets/images/visits.png",
                   )),
               Positioned(
                   top: 110,
                   child: DemoExplainCard2(
                       text:
-                          "demo2".tr(),
                           "demo2".tr(),
                       imagePath: "assets/images/demo 2.png",
                       onPress: () => demoControl.nextPress2(context))

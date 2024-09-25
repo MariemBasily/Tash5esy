@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/demo_controller.dart';
 import 'package:tash5esy_app/views/demo/widgets/demo_card.dart';
@@ -21,12 +22,12 @@ class DemoScreen extends StatelessWidget {
           Center(
             child: Stack(
               children: [
-               const Positioned(
+                Positioned(
                   bottom: 250,
                   left: 10,
                   right: 10,
                   child: DemoCard(
-                text: "Medical\nHistory",
+                text: "medical_history".tr(),
                 imagePath: "assets/images/medical history.png",
                 )
                 ),
@@ -35,7 +36,7 @@ class DemoScreen extends StatelessWidget {
                     child: Container(
                       padding:const EdgeInsets.all(10),
                       child: DemoExplainCard1(
-                        text: 'Here You Will Complete\nyour Medical History Form',
+                        text: 'demo1'.tr(),
                         imagePath: "assets/images/demo.png",
                         onPress: () => demoControl.nextPress1(context)
                         ),

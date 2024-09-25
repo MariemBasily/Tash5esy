@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
@@ -31,11 +32,11 @@ class _BottomNavigationState extends State<BottomNavigation> {
     return Scaffold(
       body: _screens.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-      items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(icon: Icon(Icons.home_rounded), label: "Home"),
+      items: <BottomNavigationBarItem>[
+        BottomNavigationBarItem(icon: const Icon(Icons.home_rounded), label: "home".tr()),
         BottomNavigationBarItem(
-            icon: Icon(Icons.notifications), label: "Notifications"),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+            icon: const Icon(Icons.notifications), label: "notifications".tr()),
+        BottomNavigationBarItem(icon: const Icon(Icons.person), label: "profile".tr()),
       ],
        onTap: _onItemTap,
       currentIndex: _selectedIndex,

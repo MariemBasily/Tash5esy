@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
@@ -13,7 +14,7 @@ class NotiBarWidget extends StatelessWidget {
           contentPadding: const EdgeInsets.all(15),
           leading: Text(
             textAlign: TextAlign.center,
-            "Notifications",
+            "notifications".tr(),
             style: TextStyle(
                 fontFamily: "SourceSans3",
                 fontWeight: FontWeight.bold,
@@ -30,7 +31,7 @@ class NotiBarWidget extends StatelessWidget {
                       shape: BoxShape.rectangle),
                   child: Text(
                     textAlign: TextAlign.center,
-                    "News",
+                    "news".tr(),
                     style: TextStyle(
                         fontFamily: "SourceSans3",
                         fontSize: 15,

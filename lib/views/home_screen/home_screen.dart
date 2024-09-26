@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
               text: "documents".tr(),
               imagePath: "assets/images/documents.png",
               click: () {
-                // _controller.navigateToDocuments(context);
+                _controller.navigateToDocuments(context);
               },
             )),
       ]),

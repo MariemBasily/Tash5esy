@@ -43,6 +43,22 @@
     "national_id_error": "يجب أن يتكون الرقم القومي من 14 رقما.",
     "password_error": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل، تحتوي على أحرف كبيرة وصغيرة، أرقام، ورموز.",
     "sign_up": "إنشاء حساب",
+    "verify_phone_number": "تحقق من رقم الهاتف",
+    "enter_6_digit": "أدخل الرمز المكون من 6 أرقام المرسل إلى",
+    "enter_code": "أدخل رمز التحقق",
+    "didnt_receive": "لم تستلم الرمز؟",
+    "resend_code": "إعادة إرسال الرمز",
+    "Front Of NID Card": "الوجه الأمامي لبطاقة الهوية",
+    "Take a Front Photo Of Your NID Card": "قم بالتقاط صورة للوجه الأمامي من بطاقة الهوية",
+    "Back Of NID Card": "الوجه الخلفي لبطاقة الهوية",
+    "Take a Back Photo Of Your NID Card.": "قم بالتقاط صورة للوجه الخلفي من بطاقة الهوية",
+    "Take a Photo": "التقط صورة",
+    "In Order To Complete Your Signing Up Please Upload Your National ID Card": "لإكمال عملية التسجيل، يرجى تحميل بطاقة الهوية الوطنية",
+    "Verify Identity": "تحقق من الهوية",
+    "Selfie Photo": "صورة شخصية",
+    "It’s required by law to verify your identity": "مطلوب قانوناً التحقق من هويتك",
+    "It’s required by law to verify your identity as a new user": "مطلوب قانوناً التحقق من هويتك كمستخدم جديد",
+    "Verify My Identity": "تحقق من هويتي",
     "continue": "استمرار",
     "done_verfi": "تم التحقق من هويتك",
     "visits": "الزيارات",
@@ -73,10 +89,11 @@
     "medical_notes": "ملاحظات طبية",
     "lorem": "من المهم الاهتمام بالمريض، فالمريض سوف يتبعه المريض، ولكن في نفس الوقت سيحدث أن هناك الكثير من العمل والألم",
     "15_April": "١٥ ابريل",
-    "45w": "٤٥أ"
-
-
-
-
+    "45w": "٤٥أ",
+    "Medical Documents": "الوثائق الطبية",
+    "Lab Results": "نتائج المختبر",
+    "X-Ray Results": "نتائج الأشعة",
+    "Recently": "مؤخرا",
+    "files": "ملفات"
 }   
 

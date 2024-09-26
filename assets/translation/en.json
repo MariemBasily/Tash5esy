@@ -69,7 +69,7 @@
     "demo1": "Here You Will Complete\nyour Medical History Form",
     "waiting": "Waiting For Confirmation",
     "👋🏻hello_ahmed": "👋🏻Hello Ahmed",
-    "   start": "   Start With Your Medical Record",
+    "start": "   Start With Your Medical Record",
     "search": "Search...",
     "next": "Next",
     "startdemo": "Start",
@@ -94,5 +94,7 @@
     "Lab Results": "Lab Results",
     "X-Ray Results": "X-Ray Results",
     "Recently": "Recently",
-    "files": "files"
+    "files": "files",
+    "your_health_tracker": "Your Health Tracker",
+    "details": "Details"
 }

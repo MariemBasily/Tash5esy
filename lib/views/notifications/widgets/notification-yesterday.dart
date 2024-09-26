@@ -54,7 +54,7 @@ class NotificationYestedayWidget extends StatelessWidget {
             subtitle: Text(
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
-              "const ".tr(),
+              "lorem".tr(),
               style: const TextStyle(fontFamily: "SourceSans3", fontSize: 12),
               ),
               trailing: Column(

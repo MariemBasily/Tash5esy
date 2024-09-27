@@ -96,5 +96,19 @@
     "Recently": "Recently",
     "files": "files",
     "your_health_tracker": "Your Health Tracker",
-    "details": "Details"
+    "details": "Details",
+    "description2": "Description",
+    "visit_details": "visit Details",
+    "next_visit": "Next Visit",
+    "see_you_soon": "👋🏻 See you soon!",
+    "doctor1": "Dr. Chikanso Chima",
+    "doctor2": "Dr. Justin Biber",
+    "doctor3": "Dr. Alberto Cassano",
+    "doctor4": "Dr. Maria Anna",
+    "doctor5": "Dr. Krystal Jung",
+    "oncologist": "Oncologist",
+    "neurologist": "Neurologist",
+    "dermatologist": "Dermatologist",
+    "surgeon": "Surgeon",
+    "cardiologist": "Cardiologist"
 }

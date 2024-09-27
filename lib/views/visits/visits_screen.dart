@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/visit_button_controller.dart';
 import 'package:tash5esy_app/views/visits/widgets/app_bar_widget.dart';
@@ -24,36 +25,36 @@ class VisitsScreen extends StatelessWidget {
           child: ListView(
             children: [
               DoctorCard(
-                doctorName: "Dr. Chikanso Chima",
-                specialization: "Oncologist",
+                doctorName: "doctor1".tr(),
+                specialization: "oncologist".tr(),
                 appointmentDate: "16/6",
                 imageUrl: "assets/images/doctor 1.png",
                 click: () => visitcontroller.onClick(context),
               ),
               DoctorCard(
-                  doctorName: "Dr. Justin Biber",
-                  specialization: "Neurologist",
+                  doctorName: "doctor2".tr(),
+                  specialization: "neurologist".tr(),
                   appointmentDate: "8/8",
                   imageUrl: "assets/images/doctor 2.png",
                   click: () => visitcontroller.onClick(context),
               ),
               DoctorCard(
-                  doctorName: "Dr. Maria Anna",
-                  specialization: "Dermatologist",
+                  doctorName: "doctor3".tr(),
+                  specialization: "dermatologist".tr(),
                   appointmentDate: "1/5",
                   imageUrl: "assets/images/doctor 3.png",
                   click: () => visitcontroller.onClick(context)
               ),
               DoctorCard(
-                  doctorName: "Dr. Push Puttichai",
-                  specialization: "Surgeon",
+                  doctorName: "doctor4".tr(),
+                  specialization: "surgeon".tr(),
                   appointmentDate: "11/11",
                   imageUrl: "assets/images/doctor 4.png",
                   click: () => visitcontroller.onClick(context)
               ),
               DoctorCard(
-                  doctorName: "Dr. Krystal Jung",
-                  specialization: "Cardiologist",
+                  doctorName: "doctor5".tr(),
+                  specialization: "cardiologist".tr(),
                   appointmentDate: "15/5",
                   imageUrl: "assets/images/doctor 5.png",
                   click: () => visitcontroller.onClick(context)

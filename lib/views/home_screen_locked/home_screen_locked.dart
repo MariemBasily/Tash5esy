@@ -15,6 +15,7 @@ class HomeScreenLocked extends StatelessWidget {
           Container(
             color: Colors.black.withOpacity(0.5),
           ),
+          SizedBox(height: 5),
           Center(child: WaitingCard(click: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const AdminVerifiyScreen()));

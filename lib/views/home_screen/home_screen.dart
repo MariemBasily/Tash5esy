@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: HomeContainer(),
         ),
         Positioned(
-            bottom: 250,
+            bottom: 340,
             left: 10,
             right: 10,
             child: HomeCard(
@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   _controller.navigateToMedicalHistory(context);
                 })),
         Positioned(
-            bottom: 150,
+            bottom: 240,
             left: 10,
             right: 10,
             child: HomeCard(
@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   _controller.navigateToVisits(context);
                 })),
         Positioned(
-            bottom: 50,
+            bottom: 140,
             left: 10,
             right: 10,
             child: HomeCard(

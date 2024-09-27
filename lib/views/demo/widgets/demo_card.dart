@@ -14,7 +14,7 @@ class DemoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 80,
+        height: 90,
         margin: const EdgeInsets.all(40),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),

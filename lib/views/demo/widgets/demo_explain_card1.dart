@@ -12,7 +12,7 @@ class DemoExplainCard1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
-          width: 280,
+          width: 320,
           height: 200,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.9),

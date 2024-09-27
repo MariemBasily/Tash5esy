@@ -22,13 +22,13 @@ class DemoScreen3 extends StatelessWidget {
           child: Stack(
             children: [
               Positioned(
-                  bottom: 50,
+                  bottom: 140,
                   left: 10,
                   right: 10,
                 child: DemoCard(text: "documents".tr(), imagePath: "assets/images/documents.png")
               ),
               Positioned(
-                bottom: 190,
+                bottom: 290,
                 child: DemoExplainCard3(
                   text: "demo3".tr(),
                   imagePath: "assets/images/demo3.png",

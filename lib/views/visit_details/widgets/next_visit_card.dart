@@ -30,7 +30,7 @@ class NextVisitCard extends StatelessWidget {
                   offset: const Offset(0, 3),
                 )
               ]),
-          height: 44,
+          height: 46,
           child: ListTile(
             leading: const Icon(
               Icons.calendar_month_outlined,
@@ -53,7 +53,7 @@ class NextVisitCard extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: 8),
+        const SizedBox(height: 8),
         Container(
            margin: const EdgeInsets.only(right: 200, left: 10),
            padding: EdgeInsets.all(10),
@@ -66,11 +66,11 @@ class NextVisitCard extends StatelessWidget {
            ),
            child: Center(child: Text(textAlign: TextAlign.center,"Notes", style: TextStyle(color: AppColors.primary, fontFamily: "SourceSans3", fontSize: 16, fontWeight: FontWeight.w600))),
         ),
-        SizedBox(height: 8),
+       const SizedBox(height: 8),
         Container(
            padding: EdgeInsets.all(8),
           height: 120,
-          width: 280,
+          width: 340,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color: const Color.fromARGB(45, 10, 111, 183)
@@ -80,7 +80,7 @@ class NextVisitCard extends StatelessWidget {
             style: const TextStyle(fontFamily: "SourceSans3", fontSize: 13),
           ),
         ),
-         SizedBox(height: 22),
+          const SizedBox(height: 22),
         Text(
           "see_you_soon".tr(),
           style: TextStyle(

@@ -9,7 +9,7 @@ class AppBarWidget2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      toolbarHeight: 120,
+      toolbarHeight: 110,
       centerTitle: true,
       backgroundColor: AppColors.primary,
       leading: Container(

@@ -18,7 +18,7 @@ class HomeContainer extends StatelessWidget {
                   bottomLeft: Radius.circular(40),
                   bottomRight: Radius.circular(40)),
             ),
-            height: 220,
+            height: 235,
           ),
           Positioned(
             top: 30,

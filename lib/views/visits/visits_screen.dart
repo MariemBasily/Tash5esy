@@ -20,7 +20,6 @@ class VisitsScreen extends StatelessWidget {
             onPress: () => visitcontroller.onPressed(context),
           ),
         ),
-        const SizedBox(height: 8),
         Expanded(
           child: ListView(
             children: [

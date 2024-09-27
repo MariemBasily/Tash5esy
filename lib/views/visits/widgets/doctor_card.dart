@@ -22,7 +22,7 @@ class DoctorCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.all(8),
+      // margin: const EdgeInsets.all(8),
       color: Colors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       elevation: 3,
@@ -73,15 +73,15 @@ class DoctorCard extends StatelessWidget {
                           fontSize: 13,
                           color: AppColors.grey2),
                     ),
-                    const SizedBox(width: 26),
+                    const SizedBox(width: 30),
                     ElevatedButton(
                         onPressed: click,
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 10),
+                              horizontal: 35, vertical: 10),
                           backgroundColor: const Color.fromARGB(45, 10, 111, 183),
                           shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8)),
+                              borderRadius: BorderRadius.circular(50)),
                           elevation: 0,
                           minimumSize: const Size(40, 20),
                         ),

@@ -31,7 +31,7 @@ class DescriptionCard extends StatelessWidget {
              )
              ]
           ),
-          height: 44,
+          height: 46,
           child: ListTile(
             leading: const Icon(Icons.favorite, color: Colors.white,),
             title: Text(
@@ -49,7 +49,7 @@ class DescriptionCard extends StatelessWidget {
         Container(
           padding: EdgeInsets.all(8),
           height: 120,
-          width: 280,
+          width: 340,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color: const Color.fromARGB(45, 10, 111, 183)

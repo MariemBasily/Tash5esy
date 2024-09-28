@@ -12,7 +12,7 @@ class DemoExplainCard3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
-          width: 280,
+          width: 320,
           height: 200,
           margin: const EdgeInsets.all(10),
           decoration: BoxDecoration(

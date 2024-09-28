@@ -11,7 +11,7 @@ class SimpleSearchBar extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(5),
         height: 40,
-        width: 280,
+        width: 350,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white

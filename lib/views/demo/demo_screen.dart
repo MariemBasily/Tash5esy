@@ -23,7 +23,7 @@ class DemoScreen extends StatelessWidget {
             child: Stack(
               children: [
                 Positioned(
-                  bottom: 250,
+                  bottom: 340,
                   left: 10,
                   right: 10,
                   child: DemoCard(
@@ -32,7 +32,7 @@ class DemoScreen extends StatelessWidget {
                 )
                 ),
                   Positioned(
-                    bottom: 45,
+                    bottom: 130,
                     child: Container(
                       padding:const EdgeInsets.all(10),
                       child: DemoExplainCard1(

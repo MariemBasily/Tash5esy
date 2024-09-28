@@ -94,5 +94,8 @@
     "Lab Results": "Lab Results",
     "X-Ray Results": "X-Ray Results",
     "Recently": "Recently",
-    "files": "files"
+    "files": "files",
+    "lab_results": "Lab Results",
+    "no_results_available": "No Results Available",
+    "tap_here_to_see_full_results": "Tap here to see full results"
 }

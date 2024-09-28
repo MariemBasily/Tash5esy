@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:tash5esy_app/controller_screen.dart';
 import 'package:tash5esy_app/models/splash_model.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 import 'package:tash5esy_app/views/lab_results/lab_result_screen.dart';
@@ -43,10 +44,10 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/signup': (context) => NewAccountScreen(),
         '/phone_verification': (context) => PhoneVerificationScreen(phoneNumber: '',),
-        '/home_screen': (context) => HomeScreen(), 
+        '/controller_screen': (context) => ControllerScreen(), 
         '/nid_verification1_screen': (context) => IdentityVerificationScreen(), 
-        '/labResults': (context) => LabResultScreen(), 
-        '/xrayResults': (context) => XRayResultScreen(),
+        '/labResults': (context) => LabResultsScreen(), 
+        '/xrayResults': (context) => XrayResultsScreen(),
       },
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tash5esy_app/views/documentation/documents_screen.dart';
+import 'package:tash5esy_app/views/documents/documents_screen.dart';
 import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
 import 'package:tash5esy_app/views/visits/visits_screen.dart';
 

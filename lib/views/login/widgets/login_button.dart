@@ -20,7 +20,7 @@ class LoginButton extends StatelessWidget {
   void _handleLogin(BuildContext context) {
     final loginData = controller.login();
     if (loginData != null) {
-      Navigator.pushNamed(context, '/home_screen');
+      Navigator.pushNamed(context, '/controller_screen');
       ScaffoldMessenger.of(context).showSnackBar(_buildSuccessSnackBar());
     } else {
       _showErrorDialog(context);

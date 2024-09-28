@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/documents_controller.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/models/documents_model.dart';
-import 'package:tash5esy_app/views/documentation/widgets/recent_documents_list.dart';
-import 'package:tash5esy_app/views/documentation/widgets/top_buttons.dart';
+import 'package:tash5esy_app/views/documents/widgets/recent_documents_list.dart';
+import 'package:tash5esy_app/views/documents/widgets/top_buttons.dart';
 
 class MedicalDocumentsScreen extends StatefulWidget {
   @override
@@ -35,8 +35,7 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: AppColors.secondary),
           onPressed: () {
-            Navigator.of(context).pop();
-          },
+            Navigator.of(context).pop();},
         ),
       ),
       body: Padding(

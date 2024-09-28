@@ -94,6 +94,9 @@
     "Lab Results": "نتائج المختبر",
     "X-Ray Results": "نتائج الأشعة",
     "Recently": "مؤخرا",
-    "files": "ملفات"
+    "files": "ملفات",
+    "lab_results": "نتائج التحاليل",
+    "no_results_available": "لا توجد نتائج متاحة",
+    "tap_here_to_see_full_results": "اضغط هنا لعرض النتائج الكاملة"
 }   
 

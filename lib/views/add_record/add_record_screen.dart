@@ -41,7 +41,7 @@ class AddRecordScreen extends StatelessWidget {
               ),
             );
           },
-          label: 'Add Records', 
+          label: 'Add Records', text: '', child: Text(''), 
         ),
       ),
     );

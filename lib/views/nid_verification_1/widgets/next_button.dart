@@ -13,7 +13,7 @@ class NextButton2 extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) => IdentityVerificationScreen2()),
         );
-      },
+      }, text: '', child: Text(''),
     );
   }
 }

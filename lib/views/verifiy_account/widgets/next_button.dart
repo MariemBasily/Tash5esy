@@ -12,7 +12,7 @@ class NextButton extends StatelessWidget {
         Navigator.push(context,MaterialPageRoute(
               builder: (context) => IdentityVerificationScreen()),
         );
-      },
+      }, text: '', child: Text(''),
     );
   }
 }

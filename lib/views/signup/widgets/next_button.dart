@@ -13,7 +13,7 @@ class NextButton extends StatelessWidget {
           context,
           MaterialPageRoute(builder: (context) => PhoneVerificationScreen(phoneNumber: '',)),
         );
-      },
+      }, text: '', child: Text(''),
     );
   }
 }

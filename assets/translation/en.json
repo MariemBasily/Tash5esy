@@ -113,5 +113,7 @@
     "neurologist": "Neurologist",
     "dermatologist": "Dermatologist",
     "surgeon": "Surgeon",
-    "cardiologist": "Cardiologist"
+    "cardiologist": "Cardiologist",
+    "transactions": "Transactions",
+    "costs_payments": "Costs & Payments"
 }

@@ -2,8 +2,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
-import 'package:tash5esy_app/views/notifications/notifications_screen.dart';
-// import 'package:tash5esy_app/views/profile/profile_screen.dart';
+import 'package:tash5esy_app/views/payments_costs/costs_payments.dart';
+import 'package:tash5esy_app/views/transactions/transaction_screen.dart';
+import 'package:tash5esy_app/views/profile/profile_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -17,8 +18,9 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
   final List<Widget> _screens = [
     const HomeScreen(),
-    const NotificationScreen(),
-    // const ProfileScreen(),
+    const TransactionScreen(),
+    const CostsPayments(),
+    const ProfileScreen(),
   ];
 
   void _onItemTap(int index) {
@@ -38,8 +40,12 @@ class _BottomNavigationState extends State<BottomNavigation> {
             label: "home".tr(),
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.notifications),
-            label: "notifications".tr(),
+            icon: const Icon(Icons.compare_arrows_rounded),
+            label: "transactions".tr(),
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.payment_rounded),
+            label: "costs_payments".tr(),
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.person),

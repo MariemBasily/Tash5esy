@@ -35,7 +35,8 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: AppColors.secondary),
           onPressed: () {
-            Navigator.of(context).pop();},
+            Navigator.of(context).pop();
+          },
         ),
       ),
       body: Padding(
@@ -46,8 +47,8 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
             TopButtons(), // Top section with Lab Results & X-Ray Results buttons
             SizedBox(height: 20),
             Divider(
-              color: AppColors.grey, 
-              thickness: 1.5, 
+              color: AppColors.grey,
+              thickness: 1.5,
             ),
             SizedBox(height: 10),
             Text(
@@ -61,7 +62,8 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
             ),
             SizedBox(height: 10),
             Expanded(
-              child: RecentDocumentsList(recentDocuments: recentDocuments), // List of documents
+              child: RecentDocumentsList(
+                  recentDocuments: recentDocuments), // List of documents
             ),
           ],
         ),

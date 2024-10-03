@@ -5,7 +5,7 @@ import 'package:tash5esy_app/views/visits/widgets/app_bar_widget.dart';
 import 'package:tash5esy_app/views/visits/widgets/doctor_card.dart';
 
 class VisitsScreen extends StatelessWidget {
- VisitsScreen({super.key});
+VisitsScreen({super.key});
 
   // @override
 

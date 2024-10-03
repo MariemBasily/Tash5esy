@@ -9,19 +9,21 @@ class GetStartedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // String data = ModalRoute.of(context)!.settings.arguments as String;
+
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0), 
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 40), 
-            const HeaderImage(), 
-            const SizedBox(height:2), 
+            const SizedBox(height: 40),
+            const HeaderImage(),
+            const SizedBox(height: 2),
             const WelcomeText(),
-            const SizedBox(height:30), 
+            const SizedBox(height: 30),
             const DescriptionText(),
-            const SizedBox(height:100), 
+            const SizedBox(height: 100),
             CustomButton2(
               label: 'Get Started',
               onPressed: () {

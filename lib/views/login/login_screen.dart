@@ -4,7 +4,7 @@ import 'package:tash5esy_app/views/login/widgets/login_form.dart';
 import 'package:tash5esy_app/views/login/widgets/logo_widget.dart';
 import 'package:tash5esy_app/views/login/widgets/remember_me.dart';
 import 'package:tash5esy_app/views/login/widgets/header_text.dart';
-import 'package:tash5esy_app/views/login/widgets/login_footer.dart'; 
+import 'package:tash5esy_app/views/login/widgets/login_footer.dart';
 
 class LoginScreen extends StatelessWidget {
   final LoginController controller = LoginController();
@@ -31,7 +31,9 @@ class LoginScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 100),
-                LoginFooter(controller:controller), // New Footer containing login button and sign-up prompt
+                LoginFooter(
+                    controller:
+                        controller), // New Footer containing login button and sign-up prompt
                 const SizedBox(height: 20),
               ],
             ),

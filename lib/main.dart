@@ -9,9 +9,8 @@ import 'package:tash5esy_app/views/nid_verification_1/nid_verification_screen_1.
 import 'package:tash5esy_app/views/splash/splash_screen.dart';
 import 'package:tash5esy_app/views/get_started/get_started_screen.dart';
 import 'package:tash5esy_app/views/signup/signup_screen.dart';
-import 'package:tash5esy_app/views/verifiy_account/verifiy_account_screen.dart'; 
+import 'package:tash5esy_app/views/verifiy_account/verifiy_account_screen.dart';
 import 'package:tash5esy_app/views/x-ray_results/xray_results_screen.dart';
-
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,17 +35,23 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
+      // initialRoute: "/splash",
       home: SplashScreenView(
         model: SplashModel(title: 'Tash5esy App'),
       ),
       routes: {
+        '/splash': (context) => SplashScreenView(
+              model: SplashModel(title: 'Tash5esy App'),
+            ),
         '/get_started': (context) => GetStartedScreen(),
         '/login': (context) => LoginScreen(),
         '/signup': (context) => NewAccountScreen(),
-        '/phone_verification': (context) => PhoneVerificationScreen(phoneNumber: '',),
-        '/controller_screen': (context) => ControllerScreen(), 
-        '/nid_verification1_screen': (context) => IdentityVerificationScreen(), 
-        '/labResults': (context) => LabResultsScreen(), 
+        '/phone_verification': (context) => PhoneVerificationScreen(
+              phoneNumber: '',
+            ),
+        '/controller_screen': (context) => ControllerScreen(),
+        '/nid_verification1_screen': (context) => IdentityVerificationScreen(),
+        '/labResults': (context) => LabResultsScreen(),
         '/xrayResults': (context) => XrayResultsScreen(),
       },
     );

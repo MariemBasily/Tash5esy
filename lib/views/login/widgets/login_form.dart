@@ -20,6 +20,7 @@ class LoginForm extends StatelessWidget {
             fontSize: 16,
             fontWeight: FontWeight.bold,
             color: AppColors.primary,
+            fontFamily: "lato",
           ),
         ),
         const SizedBox(height: 10),
@@ -32,7 +33,7 @@ class LoginForm extends StatelessWidget {
             controller: controller.nationalIdController,
             decoration: InputDecoration(
               hintText: 'E.G., 123-456-7890'.tr(),
-              hintStyle: TextStyle(color: AppColors.grey), 
+              hintStyle: TextStyle(color: AppColors.grey, fontFamily: "lato"), 
               border: InputBorder.none,
               contentPadding:
                   EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
@@ -48,6 +49,7 @@ class LoginForm extends StatelessWidget {
             fontSize: 16,
             fontWeight: FontWeight.bold,
             color: AppColors.primary,
+            fontFamily: "lato",
           ),
         ),
         const SizedBox(height: 10),
@@ -61,7 +63,7 @@ class LoginForm extends StatelessWidget {
             obscureText: true,
             decoration: InputDecoration(
             hintText: '******'.tr(),
-            hintStyle: TextStyle(color: AppColors.grey), 
+            hintStyle: TextStyle(color: AppColors.grey, fontFamily: "lato"), 
               border: InputBorder.none,
               contentPadding:
                   EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),

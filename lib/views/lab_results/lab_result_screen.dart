@@ -43,7 +43,7 @@ class _LabResultsScreenState extends State<LabResultsScreen> {
           'lab_results'.tr(),
           style: TextStyle(
             color: AppColors.secondary,
-            fontFamily: "SourceSans3",
+            fontFamily: "lato",
             fontWeight: FontWeight.bold,
             fontSize: 26,
           ),
@@ -80,7 +80,7 @@ class _LabResultsScreenState extends State<LabResultsScreen> {
                       style: TextStyle(
                         fontSize: 18,
                         color: AppColors.secondary,
-                        fontFamily: "SourceSans3",
+                        fontFamily: "lato",
                       ),
                     ),
                   ),

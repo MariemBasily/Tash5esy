@@ -31,7 +31,7 @@ class DemoCard extends StatelessWidget {
                    decoration: TextDecoration.none,
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
-                    fontFamily: "SourceSans3",
+                    fontFamily: "lato",
                     color: AppColors.primary),
               ),
               Image.asset(imagePath),

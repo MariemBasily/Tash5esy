@@ -8,7 +8,7 @@ class TextHeader2 extends StatelessWidget {
     return Text(
       "It’s required by law to verify your identity as a new user".tr(),
       textAlign: TextAlign.center,
-      style: TextStyle(color: AppColors.grey),
+      style: TextStyle(color: AppColors.grey,fontFamily: "lato"),
     );
   }
 }

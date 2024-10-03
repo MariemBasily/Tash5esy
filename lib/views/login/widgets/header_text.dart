@@ -13,6 +13,7 @@ class SignInHeaderWidget extends StatelessWidget {
             fontSize: 32,
             fontWeight: FontWeight.bold,
             color: AppColors.secondary,
+            fontFamily: "lato",
           ),
         ),
         const SizedBox(height: 10),
@@ -21,6 +22,7 @@ class SignInHeaderWidget extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             color: AppColors.grey,
+            fontFamily: "lato",
           ),
         ),
       ],

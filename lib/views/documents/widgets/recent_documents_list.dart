@@ -31,14 +31,14 @@ class RecentDocumentsList extends StatelessWidget {
           document.title,
           style: TextStyle(color: AppColors.secondary,
           fontWeight: FontWeight.bold,
-          fontFamily: "SourceSans3",
+          fontFamily: "lato",
           fontSize: 20
           ),
         ),
         subtitle: Text(
           document.date,
           style: TextStyle(color: AppColors.grey2,
-          fontFamily: "SourceSans3",
+          fontFamily: "lato",
           fontSize: 16,
           fontWeight: FontWeight.bold,
           ),

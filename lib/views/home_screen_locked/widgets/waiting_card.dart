@@ -20,7 +20,7 @@ class WaitingCard extends StatelessWidget {
             style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 19,
-                fontFamily: "SourceSans3"),
+                fontFamily: "lato"),
           ),
         ));
   }

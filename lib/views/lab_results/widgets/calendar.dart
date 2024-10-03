@@ -45,7 +45,7 @@ class CalendarWidget extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: AppColors.secondary,
-            fontFamily: "SourceSans3",
+            fontFamily: "lato",
           ),
         ),
         IconButton(
@@ -137,7 +137,7 @@ class DayWidget extends StatelessWidget {
               style: TextStyle(
                 color: isSelected ? AppColors.white : AppColors.grey,
                 fontSize: 30, 
-                fontFamily: "SourceSans3", 
+                fontFamily: "lato", 
               ),
             ),
             Text(
@@ -146,7 +146,7 @@ class DayWidget extends StatelessWidget {
                 color: isSelected ? AppColors.white : AppColors.grey,
                 fontSize: 30, 
                 fontWeight: FontWeight.bold,
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
               ),
             ),
           ],

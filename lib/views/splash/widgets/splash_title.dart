@@ -16,6 +16,7 @@ class SplashTitle extends StatelessWidget {
           fontSize: 50,
           fontWeight: FontWeight.bold, 
           color: AppColors.green, 
+          fontFamily: "lato",
         ),
         children: [
           TextSpan(
@@ -24,6 +25,7 @@ class SplashTitle extends StatelessWidget {
               fontSize: 50,
               fontWeight: FontWeight.bold, 
               color: AppColors.secondary,
+              fontFamily: "lato",
             ),
           ),
         ],

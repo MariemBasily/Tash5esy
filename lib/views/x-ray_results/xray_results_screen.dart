@@ -39,7 +39,7 @@ class _XrayResultsScreenState extends State<XrayResultsScreen> {
           'X-Ray Results',
           style: TextStyle(
             color: AppColors.secondary,
-            fontFamily: "SourceSans3",
+            fontFamily: "lato",
             fontWeight: FontWeight.bold,
             fontSize: 26,
           ),
@@ -75,7 +75,7 @@ class _XrayResultsScreenState extends State<XrayResultsScreen> {
                       style: TextStyle(
                         fontSize: 18,
                         color: AppColors.secondary,
-                        fontFamily: "SourceSans3",
+                        fontFamily: "lato",
                       ),
                     ),
                   ),

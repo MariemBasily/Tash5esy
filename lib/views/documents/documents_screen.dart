@@ -28,7 +28,7 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
             style: TextStyle(
                 color: AppColors.secondary,
                 fontWeight: FontWeight.bold,
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
                 fontSize: 26),
           ),
         ),
@@ -57,7 +57,7 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: AppColors.secondary,
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
               ),
             ),
             SizedBox(height: 10),

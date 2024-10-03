@@ -23,7 +23,7 @@ class _IdentityVerificationScreenState
       appBar: AppBar(
         title:
         Center(
-          child: Text("Verify Identity".tr(), style: TextStyle(color: AppColors.secondary, fontWeight: FontWeight.bold),),
+          child: Text("Verify Identity".tr(), style: TextStyle(color: AppColors.secondary, fontWeight: FontWeight.bold,fontFamily: "lato"),),
         ),
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: AppColors.primary),

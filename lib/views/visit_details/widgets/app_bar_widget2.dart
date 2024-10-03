@@ -28,7 +28,7 @@ class AppBarWidget2 extends StatelessWidget {
             textAlign: TextAlign.center,
             "visit_details".tr(),
             style: const TextStyle(
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
                 fontSize: 23,
                 fontWeight: FontWeight.w600,
                 color: Colors.white),
@@ -37,7 +37,7 @@ class AppBarWidget2 extends StatelessWidget {
             textAlign: TextAlign.center,
             "your_health_tracker".tr(),
             style: const TextStyle(
-                fontFamily: "SourceSans3", fontSize: 18, color: Colors.white),
+                fontFamily: "lato", fontSize: 18, color: Colors.white),
           ),
         ],
       ),

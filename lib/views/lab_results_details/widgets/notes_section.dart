@@ -19,6 +19,7 @@ class NotesSectionWidget extends StatelessWidget {
         style: TextStyle(
           fontSize: 16,
           color: AppColors.grey,
+          fontFamily: "lato",
         ),
       ),
     );

@@ -42,6 +42,7 @@ class PhotoUploadWidget extends StatelessWidget {
               fontSize: 16,
               fontWeight: FontWeight.bold,
               color: AppColors.secondary,
+              fontFamily: "lato",
             ),
           ),
           SizedBox(height: 8),
@@ -62,7 +63,7 @@ class PhotoUploadWidget extends StatelessWidget {
           SizedBox(width: 8), // Space between icon and text
             Text(
                 "Take a Photo".tr(),
-                style: TextStyle(color: AppColors.white),
+                style: TextStyle(color: AppColors.white, fontFamily: "lato"),
       ),
     ],
   ),

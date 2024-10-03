@@ -25,6 +25,7 @@ class AddRecordScreen extends StatelessWidget {
                 color: Color(0xFF034078),
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
+                fontFamily: "lato",
               ),
             ),
           ],

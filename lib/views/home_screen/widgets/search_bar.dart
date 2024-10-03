@@ -25,7 +25,8 @@ class SimpleSearchBar extends StatelessWidget {
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w400,
-                color: AppColors.grey
+                color: AppColors.grey,
+                fontFamily: "lato",
               ),
               )
           ],

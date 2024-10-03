@@ -39,7 +39,7 @@ class NextVisitCard extends StatelessWidget {
             title: Text(
               "next_visit".tr(),
               style: const TextStyle(
-                  fontFamily: "SourceSans3",
+                  fontFamily: "lato",
                   fontSize: 18,
                   color: Colors.white,
                   fontWeight: FontWeight.w500),
@@ -47,7 +47,7 @@ class NextVisitCard extends StatelessWidget {
             trailing: Text(
               "16/6",
               style: TextStyle(
-                  fontFamily: "SourceSans3",
+                  fontFamily: "lato",
                   fontSize: 12,
                   color: AppColors.grey),
             ),
@@ -55,20 +55,20 @@ class NextVisitCard extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Container(
-           margin: const EdgeInsets.only(right: 200, left: 10),
-           padding: EdgeInsets.all(10),
-           height: 40,
-           width: 85,
-           decoration: BoxDecoration(
+          margin: const EdgeInsets.only(right: 200, left: 10),
+          padding: EdgeInsets.all(10),
+          height: 40,
+          width: 85,
+          decoration: BoxDecoration(
             color: Color.fromARGB(255, 233, 246, 254),
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.circular(25)
-           ),
-           child: Center(child: Text(textAlign: TextAlign.center,"Notes", style: TextStyle(color: AppColors.primary, fontFamily: "SourceSans3", fontSize: 16, fontWeight: FontWeight.w600))),
+          ),
+          child: Center(child: Text(textAlign: TextAlign.center,"Notes", style: TextStyle(color: AppColors.primary, fontFamily: "lato", fontSize: 16, fontWeight: FontWeight.w600))),
         ),
-       const SizedBox(height: 8),
+      const SizedBox(height: 8),
         Container(
-           padding: EdgeInsets.all(8),
+          padding: EdgeInsets.all(8),
           height: 120,
           width: 340,
           decoration: BoxDecoration(
@@ -77,14 +77,14 @@ class NextVisitCard extends StatelessWidget {
           ),
           child: Text(
             "lorem".tr(),
-            style: const TextStyle(fontFamily: "SourceSans3", fontSize: 13),
+            style: const TextStyle(fontFamily: "lato", fontSize: 13),
           ),
         ),
           const SizedBox(height: 22),
         Text(
           "see_you_soon".tr(),
           style: TextStyle(
-            fontFamily: "SourceSans3",
+            fontFamily: "lato",
             fontSize: 20,
             color: AppColors.primary,
             fontWeight: FontWeight.w700

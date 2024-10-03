@@ -9,7 +9,7 @@ class AlreadyHaveAccount extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("Already have an account? ".tr(), style: TextStyle(color: AppColors.grey),), 
+        Text("Already have an account? ".tr(), style: TextStyle(color: AppColors.grey, fontSize: 16,fontFamily: "lato"),), 
         TextButton(
           onPressed: () {
             Navigator.push(
@@ -19,7 +19,7 @@ class AlreadyHaveAccount extends StatelessWidget {
                       LoginScreen()), 
             );
           },
-          child: Text("Log in".tr(), style: TextStyle(color: AppColors.secondary),), 
+          child: Text("Log in".tr(), style: TextStyle(color: AppColors.secondary, fontSize: 16,fontFamily: "lato"),), 
         ),
       ],
     );

@@ -32,7 +32,7 @@ class DemoExplainCard1 extends StatelessWidget {
                 fontSize: 19,
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,
-                fontFamily: "raleway",
+                fontFamily: "lato",
                 shadows: [
                   Shadow(
                     blurRadius: 3.0,
@@ -57,7 +57,7 @@ class DemoExplainCard1 extends StatelessWidget {
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary),
             child: Text("next".tr(),
                 style: const TextStyle(
-                    fontFamily: "SourceSans3",
+                    fontFamily: "lato",
                     fontSize: 15,
                     color: Colors.white,
                     fontWeight: FontWeight.w700)),

@@ -48,7 +48,7 @@ class DoctorCard extends StatelessWidget {
                 Text(
                   doctorName,
                   style: TextStyle(
-                      fontFamily: "SourceSans3",
+                      fontFamily: "lato",
                       fontWeight: FontWeight.w500,
                       fontSize: 20,
                       color: AppColors.primary),
@@ -56,7 +56,7 @@ class DoctorCard extends StatelessWidget {
                 Text(
                   specialization,
                   style: TextStyle(
-                      fontFamily: "SourceSans3",
+                      fontFamily: "lato",
                       fontSize: 13,
                       color: AppColors.grey2),
                 ),
@@ -69,7 +69,7 @@ class DoctorCard extends StatelessWidget {
                     Text(
                       appointmentDate,
                       style: TextStyle(
-                          fontFamily: "SourceSans3",
+                          fontFamily: "lato",
                           fontSize: 13,
                           color: AppColors.grey2),
                     ),
@@ -89,7 +89,7 @@ class DoctorCard extends StatelessWidget {
                           "details".tr(),
                           style: TextStyle(
                               fontSize: 15,
-                              fontFamily: "SourceSans3",
+                              fontFamily: "lato",
                               fontWeight: FontWeight.w600,
                               color: AppColors.primary),
                         ))

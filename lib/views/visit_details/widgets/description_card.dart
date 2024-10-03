@@ -12,24 +12,24 @@ class DescriptionCard extends StatelessWidget {
         Container(
           margin: const EdgeInsets.only(right: 30, left: 10),
           decoration: BoxDecoration(
-             shape:BoxShape.rectangle,
-             borderRadius: BorderRadius.circular(60),
-             color: AppColors.primary,
-             gradient: const LinearGradient(
+            shape:BoxShape.rectangle,
+            borderRadius: BorderRadius.circular(60),
+            color: AppColors.primary,
+            gradient: const LinearGradient(
               colors: <Color>[
                 Color.fromARGB(255, 10, 111, 183),
                 Color.fromARGB(255, 3, 64, 120)
               ],
-               begin: Alignment.centerLeft,
+              begin: Alignment.centerLeft,
               end: Alignment.centerRight,
-             ),
-             boxShadow: [
+            ),
+            boxShadow: [
               BoxShadow(
               color: Colors.black.withOpacity(0.2),
               blurRadius: 2,
               offset: const Offset(0, 3),
-             )
-             ]
+            )
+            ]
           ),
           height: 46,
           child: ListTile(
@@ -37,7 +37,7 @@ class DescriptionCard extends StatelessWidget {
             title: Text(
               "description2".tr(),
               style: const TextStyle(
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
                 fontSize: 18,
                 color: Colors.white,
                 fontWeight: FontWeight.w500
@@ -56,7 +56,7 @@ class DescriptionCard extends StatelessWidget {
           ),
           child: Text(
             "lorem".tr(),
-            style: const TextStyle(fontFamily: "SourceSans3", fontSize: 13),
+            style: const TextStyle(fontFamily: "lato", fontSize: 13),
           ),
           ),]
     );

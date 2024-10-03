@@ -22,7 +22,7 @@ class XrayResultCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  fontFamily: "SourceSans3",
+                  fontFamily: "lato",
                   color: AppColors.primary,
                 ),
               ),
@@ -51,7 +51,7 @@ class XrayResultCard extends StatelessWidget {
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: AppColors.white,
-                            fontFamily: "SourceSans3",
+                            fontFamily: "lato",
                           ),
                           overflow: TextOverflow.ellipsis,
                         ),
@@ -61,7 +61,7 @@ class XrayResultCard extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 14,
                             color: AppColors.grey,
-                            fontFamily: "SourceSans3",
+                            fontFamily: "lato",
                             fontWeight: FontWeight.bold,
                           ),
                           overflow: TextOverflow.ellipsis,

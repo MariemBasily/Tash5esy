@@ -32,6 +32,7 @@ class PDFCardWidget extends StatelessWidget {
               fontSize: 18,
               fontWeight: FontWeight.bold,
               color: AppColors.white,
+              fontFamily: "lato",
             ),
           ),
         ],

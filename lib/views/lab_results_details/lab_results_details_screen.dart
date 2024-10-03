@@ -19,7 +19,7 @@ class LabResultsDetails extends StatelessWidget {
             color: AppColors.secondary,
             fontWeight: FontWeight.bold,
             fontSize: 26,
-            fontFamily: "SourceSans3",
+            fontFamily: "lato",
           ),
         ),
         centerTitle: true,
@@ -54,6 +54,7 @@ class LabResultsDetails extends StatelessWidget {
                         fontSize: 20,
                         color: AppColors.white,
                         fontWeight: FontWeight.bold,
+                        fontFamily: "lato",
                       ),
                     ),
                   ),
@@ -97,7 +98,7 @@ class LabResultsDetails extends StatelessWidget {
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: AppColors.secondary,
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
               ),
             ),
             SizedBox(height: 10),
@@ -117,7 +118,7 @@ class LabResultsDetails extends StatelessWidget {
                       child: Text(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
                         'Praesent pellentesque congue lorem, vel tincidunt tortor placerat a. ',
-                        style: TextStyle(fontSize: 16, color: AppColors.primary),
+                        style: TextStyle(fontSize: 16, color: AppColors.primary, fontFamily: "lato"),
                       ),
                     ),
                   );

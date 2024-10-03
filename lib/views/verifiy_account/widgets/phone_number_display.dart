@@ -13,6 +13,7 @@ class PhoneNumberDisplay extends StatelessWidget {
         fontSize: 18,
         fontWeight: FontWeight.bold,
         color: AppColors.grey,
+        fontFamily: "lato",
       ),
     );
   }

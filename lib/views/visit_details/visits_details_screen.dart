@@ -5,7 +5,7 @@ import 'package:tash5esy_app/views/visit_details/widgets/description_card.dart';
 import 'package:tash5esy_app/views/visit_details/widgets/next_visit_card.dart';
 
 class VisitsDetailsScreen extends StatelessWidget {
-   VisitsDetailsScreen({super.key});
+  VisitsDetailsScreen({super.key});
 
   // @override
   final visitcontroller = VisitButtonController();
@@ -19,7 +19,7 @@ class VisitsDetailsScreen extends StatelessWidget {
             onPress: () => visitcontroller.onPress(context),
           ),
         ),
-       const SizedBox(height: 10),
+      const SizedBox(height: 10),
         DescriptionCard(),
         const SizedBox(height: 20),
         NextVisitCard()

@@ -29,7 +29,7 @@ class _NewAccountScreenState extends State<NewAccountScreen> {
             color: AppColors.secondary,
             fontWeight: FontWeight.bold,
             fontSize: 26,
-            fontFamily: "SourceSans3",
+            fontFamily: "lato",
           ),
         ),
         centerTitle: true,

@@ -22,7 +22,7 @@ class CustomAppBarr extends StatelessWidget implements PreferredSizeWidget {
         title: Text(
           'Forget Your Password?',
           style: TextStyle(
-              color: AppColors.secondary, fontWeight: FontWeight.bold),
+              color: AppColors.secondary, fontWeight: FontWeight.bold,fontFamily: "lato"),
         ),
         centerTitle: true,
       ),
@@ -44,6 +44,7 @@ class CodeVerificationSection extends StatelessWidget {
           style: TextStyle(
             color: AppColors.grey2,
             fontSize: 16,
+            fontFamily: "lato",
           ),
         ),
         Padding(
@@ -58,7 +59,8 @@ class CodeVerificationSection extends StatelessWidget {
                 style: TextStyle(
                     color: Color(0xFF034078),
                     fontSize: 16,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "lato"),
               ),
               const SizedBox(height: 8),
               // Phone Number Input Field
@@ -70,6 +72,7 @@ class CodeVerificationSection extends StatelessWidget {
                   hintText: 'E.G., +20154218457',
                   hintStyle: const TextStyle(
                     color: Colors.grey,
+                    fontFamily: "lato",
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
@@ -84,7 +87,7 @@ class CodeVerificationSection extends StatelessWidget {
                 style: TextStyle(
                     color: Color(0xFF034078),
                     fontSize: 16,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,fontFamily:"lato"),
               ),
               SizedBox(height: 8),
               // National ID Input Field
@@ -96,6 +99,7 @@ class CodeVerificationSection extends StatelessWidget {
                   hintText: 'E.G., 123-456-7890',
                   hintStyle: const TextStyle(
                     color: Colors.grey,
+                    fontFamily: "lato",
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),

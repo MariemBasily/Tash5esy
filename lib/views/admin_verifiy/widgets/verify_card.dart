@@ -33,7 +33,7 @@ class VerifyCard extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "SourceSans3",
+                              fontFamily: "lato",
                               color: AppColors.primary),
                         ),
                         const SizedBox(height: 30),

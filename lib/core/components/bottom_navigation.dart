@@ -2,7 +2,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
-// import 'package:tash5esy_app/views/profile/profile_screen.dart';
+import 'package:tash5esy_app/views/payments_costs/costs_payments.dart';
+import 'package:tash5esy_app/views/transactions/transaction_screen.dart';
+import 'package:tash5esy_app/views/profile/profile_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -16,8 +18,9 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
   final List<Widget> _screens = [
     const HomeScreen(),
-    
-    // const ProfileScreen(),
+    const TransactionScreen(),
+    const CostsPayments(),
+    const ProfileScreen(),
   ];
 
   void _onItemTap(int index) {

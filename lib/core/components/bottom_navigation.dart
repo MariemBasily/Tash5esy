@@ -34,22 +34,23 @@ class _BottomNavigationState extends State<BottomNavigation> {
     return Scaffold(
       body: _screens.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: const Icon(Icons.home_rounded),
-            label: "home".tr(),
+            label: "Home"
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.compare_arrows_rounded),
-            label: "transactions".tr(),
+            label: "Transactions"
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.payment_rounded),
-            label: "costs_payments".tr(),
+            label: "Costs & Payments"
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.person),
-            label: "profile".tr(),
+            label: "Profile"
           ),
         ],
         onTap: _onItemTap,
@@ -64,7 +65,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
         unselectedLabelStyle: const TextStyle(
           fontFamily: "SourceSans3",
           fontWeight: FontWeight.w700,
-          fontSize: 10,
+          fontSize: 9,
+          color: Colors.grey
         ),
         backgroundColor: Colors.white,
       ),

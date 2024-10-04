@@ -7,35 +7,41 @@ class NotiBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-       ListTile(
-          contentPadding: const EdgeInsets.all(15),
-          leading: Text(
-            textAlign: TextAlign.center,
-            "notifications".tr(),
-            style: TextStyle(
-                fontFamily: "SourceSans3",
-                fontWeight: FontWeight.bold,
-                color: AppColors.secondary,
-                fontSize: 20),
-          ),
-          trailing: IconButton(
-              onPressed: () {},
-              icon: Container(
-                  width: 50,
-                  decoration: BoxDecoration(
-                      color: const Color.fromARGB(100, 10, 111, 183),
-                      borderRadius: BorderRadius.circular(15),
-                      shape: BoxShape.rectangle),
-                  child: Text(
-                    textAlign: TextAlign.center,
-                    "news".tr(),
-                    style: TextStyle(
-                        fontFamily: "SourceSans3",
-                        fontSize: 15,
-                        color: AppColors.primary),
-                  ))),
-      )  ]  );
-  }}
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      ListTile(
+        contentPadding: const EdgeInsets.all(15),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back_ios_new_rounded,
+                color: AppColors.secondary, size: 20)),
+        title: Text(
+          textAlign: TextAlign.center,
+          "notifications".tr(),
+          style: TextStyle(
+              fontFamily: "SourceSans3",
+              fontWeight: FontWeight.bold,
+              color: AppColors.secondary,
+              fontSize: 20),
+        ),
+        // trailing: IconButton(
+        //     onPressed: () {},
+        //     icon: Container(
+        //         width: 50,
+        //         decoration: BoxDecoration(
+        //             color: const Color.fromARGB(100, 10, 111, 183),
+        //             borderRadius: BorderRadius.circular(15),
+        //             shape: BoxShape.rectangle),
+        //         child: Text(
+        //           textAlign: TextAlign.center,
+        //           "news".tr(),
+        //           style: TextStyle(
+        //               fontFamily: "SourceSans3",
+        //               fontSize: 15,
+        //               color: AppColors.primary),
+        //         ))),
+      )
+    ]);
+  }
+}

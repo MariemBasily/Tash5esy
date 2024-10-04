@@ -18,7 +18,7 @@ class HomeCard extends StatelessWidget {
           onTap: () => click(),
           child: Container(
             height: 90,
-            margin: const EdgeInsets.all(40),
+            margin: const EdgeInsets.only(right: 40, left: 40),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color:const Color.fromARGB(30, 0, 122, 255),

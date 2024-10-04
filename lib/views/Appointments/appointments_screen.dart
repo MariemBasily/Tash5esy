@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/visit_button_controller.dart';
-import 'package:tash5esy_app/views/visits/widgets/app_bar_widget.dart';
-import 'package:tash5esy_app/views/visits/widgets/doctor_card.dart';
+import 'package:tash5esy_app/views/Appointments/widgets/app_bar_widget.dart';
+import 'package:tash5esy_app/views/Appointments/widgets/doctor_card.dart';
 
-class VisitsScreen extends StatelessWidget {
-VisitsScreen({super.key});
+class AppointmentsScreen extends StatelessWidget {
+AppointmentsScreen({super.key});
 
   // @override
 

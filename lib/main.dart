@@ -20,10 +20,10 @@ Future<void> main() async {
     EasyLocalization(
       supportedLocales: [Locale('en'), Locale('ar')],
       path: 'assets/translation',
-      fallbackLocale: Locale('en'),
+      startLocale: Locale('en'),
       child: MyApp(),
     ),
-  );
+  ); 
 }
 
 class MyApp extends StatelessWidget {
@@ -40,15 +40,11 @@ class MyApp extends StatelessWidget {
         model: SplashModel(title: 'Tash5esy App'),
       ),
       routes: {
-        '/splash': (context) => SplashScreenView(
-              model: SplashModel(title: 'Tash5esy App'),
-            ),
+        '/splash': (context) => SplashScreenView(model: SplashModel(title: 'Tash5esy App'),),
         '/get_started': (context) => GetStartedScreen(),
         '/login': (context) => LoginScreen(),
         '/signup': (context) => NewAccountScreen(),
-        '/phone_verification': (context) => PhoneVerificationScreen(
-              phoneNumber: '',
-            ),
+        '/phone_verification': (context) => PhoneVerificationScreen(phoneNumber: '',),
         '/controller_screen': (context) => ControllerScreen(),
         '/nid_verification1_screen': (context) => IdentityVerificationScreen(),
         '/labResults': (context) => LabResultsScreen(),

@@ -9,6 +9,8 @@ class SplashTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('tash'.tr()); 
+    print('5esy'.tr()); 
     return RichText(
       text: TextSpan(
         text: 'Tash'.tr(), 

@@ -6,6 +6,7 @@ import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 import 'package:tash5esy_app/views/lab_results/lab_result_screen.dart';
 import 'package:tash5esy_app/views/login/login_screen.dart';
 import 'package:tash5esy_app/views/nid_verification_1/nid_verification_screen_1.dart';
+import 'package:tash5esy_app/views/profile/profile_screen.dart';
 import 'package:tash5esy_app/views/splash/splash_screen.dart';
 import 'package:tash5esy_app/views/get_started/get_started_screen.dart';
 import 'package:tash5esy_app/views/signup/signup_screen.dart';
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
         '/nid_verification1_screen': (context) => IdentityVerificationScreen(), 
         '/labResults': (context) => LabResultsScreen(), 
         '/xrayResults': (context) => XrayResultsScreen(),
+        '/profilescreen': (context) => ProfileScreen(),
       },
     );
   }

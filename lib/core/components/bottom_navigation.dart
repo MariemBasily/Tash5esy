@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 import 'package:tash5esy_app/views/notifications/notifications_screen.dart';
-// import 'package:tash5esy_app/views/profile/profile_screen.dart';
+import 'package:tash5esy_app/views/profile/profile_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -18,7 +18,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   final List<Widget> _screens = [
     const HomeScreen(),
     const NotificationScreen(),
-    // const ProfileScreen(),
+    const ProfileScreen(),
   ];
 
   void _onItemTap(int index) {
@@ -30,7 +30,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _screens.elementAt(_selectedIndex),
+      body: 
+      _screens.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(

@@ -14,7 +14,10 @@ class EditProfileScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Edit Profile'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios,color: Color(0xFF034078)),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Color(0xFF034078),
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -24,10 +27,20 @@ class EditProfileScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            const CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage(
-                  'assets\images\avatar.png'), // Replace with your image asset
+            Stack(
+              children: [
+                const CircleAvatar(
+                  radius: 10,
+                  backgroundColor: Color(0xFF034078),
+                  child: Icon(Icons.edit_outlined),
+                ),
+                const CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage(
+                    'assets\images\avatar.png',
+                  ), // Replace with your image asset
+                ),
+              ],
             ),
             const SizedBox(height: 20),
             CustomTextField(),

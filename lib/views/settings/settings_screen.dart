@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
+import 'package:tash5esy_app/views/settings/widgets/custom_listtile.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -16,11 +17,16 @@ class SettingsScreen extends StatelessWidget {
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios,color: AppColors.secondary,),
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: AppColors.secondary,
+          ),
           onPressed: () {
+            Navigator.pop(context);
           },
         ),
       ),
+      body: CustomListTile(),
     );
   }
 }

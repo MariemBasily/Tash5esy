@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/edit_profile/edit_profile_screen.dart';
+import 'package:tash5esy_app/views/privacy_policy/privacy_policy_screen.dart';
 import 'package:tash5esy_app/views/profile/widgets/profile_screen_text.dart';
+import 'package:tash5esy_app/views/settings/settings_screen.dart';
 
 class ProfileScreenListTile extends StatelessWidget {
   const ProfileScreenListTile({super.key});
@@ -43,7 +45,14 @@ class ProfileScreenListTile extends StatelessWidget {
           leading: Image.asset('assets\icons\settings_icon.png'),
           title: ProfileScreenText(text: 'Settings'),
           trailing: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SettingsScreen(),
+                ),
+              );
+            },
             icon: Icon(
               Icons.arrow_forward_ios,
               color: AppColors.blue,
@@ -52,9 +61,16 @@ class ProfileScreenListTile extends StatelessWidget {
         ),
         ListTile(
           leading: Image.asset('aassets\icons\privacy policy_icon.png'),
-          title: ProfileScreenText(text: 'Praivacy Policy'),
+          title: ProfileScreenText(text: 'Privacy Policy'),
           trailing: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PrivacyPolicyScreen(),
+                ),
+              );
+            },
             icon: Icon(
               Icons.arrow_forward_ios,
               color: AppColors.blue,

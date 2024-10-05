@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
-class ProfileScreenText extends StatelessWidget {
+class CustomText extends StatelessWidget {
   final String text;
-  const ProfileScreenText({
+
+  const CustomText({
     required this.text,
   });
 

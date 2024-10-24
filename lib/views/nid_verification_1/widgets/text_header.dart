@@ -8,7 +8,7 @@ class TextHeaderWidget extends StatelessWidget {
     return Text(
       "In Order To Complete Your Signing Up Please Upload Your National ID Card".tr(),
       textAlign: TextAlign.center,
-      style: TextStyle(color: AppColors.grey),
+      style: TextStyle(color: AppColors.grey,fontFamily: "lato"),
     );
   }
 }

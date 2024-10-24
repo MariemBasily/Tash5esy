@@ -25,7 +25,7 @@ class ButtonWidget extends StatelessWidget {
             child: Text(
               " Send Code",
               style: TextStyle(
-                fontFamily: "SourceCodePro",
+                fontFamily: "lato",
                 fontSize: 15,
                 fontWeight: FontWeight.w700,
                 color: AppColors.grey,

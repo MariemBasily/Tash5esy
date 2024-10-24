@@ -27,7 +27,7 @@ class _IdentityVerificationScreenState
           child: Text(
             "Verify Identity".tr(),
             style: TextStyle(
-                color: AppColors.secondary, fontWeight: FontWeight.bold),
+                color: AppColors.secondary, fontWeight: FontWeight.bold,fontFamily: "lato"),
           ),
         ),
         leading: IconButton(

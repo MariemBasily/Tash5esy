@@ -28,8 +28,7 @@ class LoginController {
       passwordError = "Password cannot be empty.".tr();
     } else if (!_isValidPassword(password)) {
       passwordError =
-          "Password must be at least 6 characters, with letters, numbers, and symbols."
-              .tr();
+          "Password must be at least 6 characters, with letters, numbers, and symbols.".tr();
     }
 
     if (nationalIdError == null && passwordError == null) {

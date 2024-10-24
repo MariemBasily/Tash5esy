@@ -13,6 +13,7 @@ class SubText extends StatelessWidget {
       style: TextStyle(
         fontSize: 16,
         color: AppColors.grey,
+        fontFamily: "lato",
       ),
       textAlign: TextAlign.center,
     );

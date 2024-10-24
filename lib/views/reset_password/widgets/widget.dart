@@ -20,7 +20,7 @@ class CustomAppBarr extends StatelessWidget implements PreferredSizeWidget {
         title: Text(
           'Set a New Password',
           style: TextStyle(
-              color: AppColors.secondary, fontWeight: FontWeight.bold),
+              color: AppColors.secondary, fontWeight: FontWeight.bold,fontFamily: "lato"),
         ),
         centerTitle: true,
       ),
@@ -42,6 +42,7 @@ class Newpassword extends StatelessWidget {
           style: TextStyle(
             color: AppColors.grey2,
             fontSize: 16,
+            fontFamily: "lato",
           ),
         ),
         Padding(
@@ -56,7 +57,8 @@ class Newpassword extends StatelessWidget {
                 style: TextStyle(
                     color: AppColors.primary,
                     fontSize: 16,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "lato"),
               ),
               const SizedBox(height: 8),
               // Phone Number Input Field
@@ -68,6 +70,7 @@ class Newpassword extends StatelessWidget {
                   hintText: '**********',
                   hintStyle: const TextStyle(
                     color: Colors.grey,
+                    fontFamily: "lato",
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
@@ -82,7 +85,8 @@ class Newpassword extends StatelessWidget {
                 style: TextStyle(
                     color: AppColors.primary,
                     fontSize: 16,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "lato"),
               ),
               SizedBox(height: 8),
               // National ID Input Field
@@ -94,6 +98,7 @@ class Newpassword extends StatelessWidget {
                   hintText: '*********',
                   hintStyle: TextStyle(
                     color: AppColors.grey2,
+                    fontFamily: "lato",
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
@@ -128,7 +133,7 @@ class VerifyButton extends StatelessWidget {
         },
         child: Text(
           'Update Password',
-          style: TextStyle(color: AppColors.grey, fontSize: 18),
+          style: TextStyle(color: AppColors.grey, fontSize: 18,fontFamily: "lato"),
         ),
       ),
     );

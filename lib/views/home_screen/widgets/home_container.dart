@@ -18,7 +18,7 @@ class HomeContainer extends StatelessWidget {
                   bottomLeft: Radius.circular(40),
                   bottomRight: Radius.circular(40)),
             ),
-            height: 220,
+            height: 235,
           ),
           Positioned(
             top: 30,
@@ -32,7 +32,7 @@ class HomeContainer extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w700,
-                    fontFamily: "SourceSans3",
+                    fontFamily: "lato",
                     color: Colors.white,
                   ),
                 ),
@@ -42,7 +42,7 @@ class HomeContainer extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w200,
-                    fontFamily: "SourceSans3",
+                    fontFamily: "lato",
                     color: Colors.white,
                   ),
                 ),

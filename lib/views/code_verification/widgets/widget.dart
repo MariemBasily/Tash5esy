@@ -23,7 +23,7 @@ class CustomAppBarr extends StatelessWidget implements PreferredSizeWidget {
         title: Text(
           'Code Sent To Your SMS',
           style: TextStyle(
-              color: AppColors.secondary, fontWeight: FontWeight.bold),
+              color: AppColors.secondary, fontWeight: FontWeight.bold, fontFamily: "lato"),
         ),
         centerTitle: true,
       ),
@@ -45,6 +45,7 @@ class CodeVerificationSection extends StatelessWidget {
           style: TextStyle(
             color: AppColors.grey2,
             fontSize: 16,
+            fontFamily: "lato",
           ),
         ),
         SizedBox(height: 20),
@@ -54,6 +55,7 @@ class CodeVerificationSection extends StatelessWidget {
             color: AppColors.primary,
             fontSize: 20,
             fontWeight: FontWeight.bold,
+            fontFamily: "lato",
           ),
         ),
         SizedBox(height: 20),
@@ -75,6 +77,7 @@ class CodeVerificationSection extends StatelessWidget {
                   style: TextStyle(
                     color: AppColors.grey2,
                     fontSize: 22,
+                    fontFamily: "lato",
                   ),
                 ),
               ),
@@ -85,11 +88,11 @@ class CodeVerificationSection extends StatelessWidget {
         RichText(
           text: TextSpan(
             text: "Haven't got the code yet? ",
-            style: TextStyle(color: AppColors.grey2),
+            style: TextStyle(color: AppColors.grey2, fontFamily: "lato"),
             children: <TextSpan>[
               TextSpan(
                 text: 'Resend code',
-                style: TextStyle(color: AppColors.secondary),
+                style: TextStyle(color: AppColors.secondary,fontFamily:"lato",fontWeight: FontWeight.bold),
               ),
             ],
           ),

@@ -20,14 +20,14 @@ class PhoneNumberField extends StatelessWidget {
               fontWeight: FontWeight.bold,
               fontSize: 20.0,
               color: AppColors.primary,
-              fontFamily: "SourceSans3",
+              fontFamily: "lato",
             ),
           ),
           SizedBox(height: 8.0),
           TextFormField(
             decoration: InputDecoration(
               hintText: "E.G., +20154218457".tr(),
-              hintStyle: TextStyle(color: AppColors.grey, fontSize: 18.0, fontFamily: "SourceSans3"),
+              hintStyle: TextStyle(color: AppColors.grey, fontSize: 18.0, fontFamily: "lato"),
               filled: true,
               fillColor: AppColors.blue,
               contentPadding:

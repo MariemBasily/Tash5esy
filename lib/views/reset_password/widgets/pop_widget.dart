@@ -26,6 +26,7 @@ class PopupWidget extends StatelessWidget {
                     color: AppColors.primary,
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
+                    fontFamily: "lato",
                   ),
                 ),
                 SizedBox(height: 10),
@@ -33,7 +34,7 @@ class PopupWidget extends StatelessWidget {
                   'Congratulations! Your Password Has Been Changed. '
                   'Click Continue To Login',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: AppColors.grey2),
+                  style: TextStyle(color: AppColors.grey2,fontFamily: "lato"),
                 ),
                 SizedBox(height: 20),
                 ElevatedButton(
@@ -49,7 +50,7 @@ class PopupWidget extends StatelessWidget {
                   },
                   child: Text(
                     'Continue',
-                    style: TextStyle(color: AppColors.grey, fontSize: 16),
+                    style: TextStyle(color: AppColors.grey, fontSize: 16,fontFamily: "lato"),
                   ),
                 ),
               ],

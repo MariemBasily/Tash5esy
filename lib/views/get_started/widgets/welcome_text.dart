@@ -20,6 +20,7 @@ class WelcomeText extends StatelessWidget {
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
                   color: AppColors.secondary,
+                  fontFamily: "lato",
                 ),
               ),
               RichText(
@@ -29,6 +30,7 @@ class WelcomeText extends StatelessWidget {
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
                     color: AppColors.green,
+                    fontFamily: "lato",
                   ),
                   children: [
                     TextSpan(
@@ -37,6 +39,7 @@ class WelcomeText extends StatelessWidget {
                         fontSize: 35,
                         fontWeight: FontWeight.bold,
                         color: AppColors.secondary,
+                        fontFamily: "lato",
                       ),
                     ),
                   ],

@@ -17,7 +17,7 @@ class HomeCard extends StatelessWidget {
     return InkWell(
           onTap: () => click(),
           child: Container(
-            height: 80,
+            height: 90,
             margin: const EdgeInsets.all(40),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
@@ -33,7 +33,7 @@ class HomeCard extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w900,
-                          fontFamily: "SourceSans3",
+                          fontFamily: "lato",
                           color: AppColors.secondary),
                     ),
                     Image.asset(imagePath),

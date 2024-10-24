@@ -62,6 +62,7 @@ class _PhoneVerificationViewState extends State<PhoneVerificationScreen> {
                           color: AppColors.primary,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
+                          fontFamily: "lato",
                         ),
                       ),
                     ),
@@ -74,7 +75,9 @@ class _PhoneVerificationViewState extends State<PhoneVerificationScreen> {
                           Text(
                             tr("didnt_receive"),
                             style:
-                                TextStyle(fontSize: 14, color: AppColors.grey),
+                                TextStyle(fontSize: 14,
+                                color: AppColors.grey,
+                                fontFamily: "lato"),
                           ),
                           TextButton(
                             onPressed: () {
@@ -86,6 +89,7 @@ class _PhoneVerificationViewState extends State<PhoneVerificationScreen> {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: AppColors.secondary,
+                                fontFamily: "lato"
                               ),
                             ),
                           ),

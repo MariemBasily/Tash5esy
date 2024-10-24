@@ -19,7 +19,7 @@ class DemoScreen2 extends StatelessWidget {
           child: Stack(
             children: [
               Positioned(
-                  bottom: 150,
+                  bottom: 240,
                   left: 10,
                   right: 10,
                   child: DemoCard(
@@ -27,7 +27,7 @@ class DemoScreen2 extends StatelessWidget {
                     imagePath: "assets/images/visits.png",
                   )),
               Positioned(
-                  top: 110,
+                  top: 220,
                   child: DemoExplainCard2(
                       text:
                           "demo2".tr(),

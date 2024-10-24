@@ -24,7 +24,7 @@ final VoidCallback onPressed; // Will be excuted when an event happen
         child: Text(
           "continue".tr(),
           style: const TextStyle(
-            fontFamily: "SourceSans3",
+            fontFamily: "lato",
             fontSize: 15,
             fontWeight: FontWeight.w700,
             color: Colors.white

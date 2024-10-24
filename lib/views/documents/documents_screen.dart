@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/documents_controller.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/models/documents_model.dart';
-import 'package:tash5esy_app/views/documentation/widgets/recent_documents_list.dart';
-import 'package:tash5esy_app/views/documentation/widgets/top_buttons.dart';
+import 'package:tash5esy_app/views/documents/widgets/recent_documents_list.dart';
+import 'package:tash5esy_app/views/documents/widgets/top_buttons.dart';
 
 class MedicalDocumentsScreen extends StatefulWidget {
   @override
@@ -28,7 +28,7 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
             style: TextStyle(
                 color: AppColors.secondary,
                 fontWeight: FontWeight.bold,
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
                 fontSize: 26),
           ),
         ),
@@ -47,8 +47,8 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
             TopButtons(), // Top section with Lab Results & X-Ray Results buttons
             SizedBox(height: 20),
             Divider(
-              color: AppColors.grey, 
-              thickness: 1.5, 
+              color: AppColors.grey,
+              thickness: 1.5,
             ),
             SizedBox(height: 10),
             Text(
@@ -57,12 +57,13 @@ class _MedicalDocumentsScreenState extends State<MedicalDocumentsScreen> {
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: AppColors.secondary,
-                fontFamily: "SourceSans3",
+                fontFamily: "lato",
               ),
             ),
             SizedBox(height: 10),
             Expanded(
-              child: RecentDocumentsList(recentDocuments: recentDocuments), // List of documents
+              child: RecentDocumentsList(
+                  recentDocuments: recentDocuments), // List of documents
             ),
           ],
         ),

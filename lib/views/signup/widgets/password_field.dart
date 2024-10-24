@@ -20,7 +20,7 @@ class PasswordField extends StatelessWidget {
               fontWeight: FontWeight.bold,
               fontSize: 20.0,
               color: AppColors.primary,
-              fontFamily: "SourceSans3",
+              fontFamily: "lato",
             ),
           ),
           SizedBox(height: 8.0),
@@ -28,7 +28,7 @@ class PasswordField extends StatelessWidget {
             obscureText: true,
             decoration: InputDecoration(
               hintText: "Enter your password",
-              hintStyle: TextStyle(color: AppColors.grey, fontSize: 18.0, fontFamily: "SourceSans3"),
+              hintStyle: TextStyle(color: AppColors.grey, fontSize: 18.0, fontFamily: "lato"),
               filled: true,
               fillColor: AppColors.blue,
               contentPadding:

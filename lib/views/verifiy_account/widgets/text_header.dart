@@ -14,6 +14,7 @@ class TextHeader extends StatelessWidget {
         fontSize: 24,
         fontWeight: FontWeight.bold,
         color: AppColors.secondary,
+        fontFamily: "lato",
       ),
     );
   }

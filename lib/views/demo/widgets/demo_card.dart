@@ -14,7 +14,7 @@ class DemoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 80,
+        height: 90,
         margin: const EdgeInsets.all(40),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
@@ -31,7 +31,7 @@ class DemoCard extends StatelessWidget {
                    decoration: TextDecoration.none,
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
-                    fontFamily: "SourceSans3",
+                    fontFamily: "lato",
                     color: AppColors.primary),
               ),
               Image.asset(imagePath),

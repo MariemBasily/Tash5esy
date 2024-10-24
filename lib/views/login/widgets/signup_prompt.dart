@@ -10,7 +10,7 @@ class SignupPrompt extends StatelessWidget {
       children: [
         Text(
           'Don’t Have An Account? '.tr(),
-          style: TextStyle(color: AppColors.grey2),
+          style: TextStyle(color: AppColors.grey2,fontFamily: "lato"),
         ),
         TextButton(
           onPressed: () {
@@ -21,6 +21,7 @@ class SignupPrompt extends StatelessWidget {
             style: TextStyle(
               color: AppColors.secondary,
               fontWeight: FontWeight.bold,
+              fontFamily: "lato",
             ),
           ),
         ),

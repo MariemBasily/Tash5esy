@@ -15,7 +15,7 @@ class VerifyCard extends StatelessWidget {
       children: [
         Container(
                 padding: const EdgeInsets.all(16),
-                height: 200,
+                height: 180,
                 width: 300,
                 child: Card(
                   shape: RoundedRectangleBorder(
@@ -33,10 +33,10 @@ class VerifyCard extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "SourceSans3",
+                              fontFamily: "lato",
                               color: AppColors.primary),
                         ),
-                        const SizedBox(height: 25),
+                        const SizedBox(height: 30),
                         VerifyButton(onPressed: onVerify)
                       ],
                     ),

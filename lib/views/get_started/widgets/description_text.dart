@@ -10,7 +10,7 @@ class DescriptionText extends StatelessWidget {
       child: Text(
         "Welcome to Tash5esy, your dedicated health portal where you can easily access and manage your medical records and stay informed about your health by enhancing your knowledge of your health and controlling your well-being.",
         textAlign: TextAlign.left,
-        style: TextStyle(fontSize: 14, color: Colors.grey),
+        style: TextStyle(fontSize: 14, color: Colors.grey, fontFamily: "lato"),
       ),
     );
   }

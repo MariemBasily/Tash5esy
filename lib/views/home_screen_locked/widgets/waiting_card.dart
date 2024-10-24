@@ -11,7 +11,7 @@ class WaitingCard extends StatelessWidget {
     return InkWell(
         onTap: () => click(), // Click Now For UI Only --- in the Future it must go automatically aftr verifying == No Need For Controller Here Now
         child: Container(
-          height: 50,
+          height: 65,
           width: 180,
           decoration: BoxDecoration(color: Colors.white.withOpacity(0.9)),
           child: Text(
@@ -20,7 +20,7 @@ class WaitingCard extends StatelessWidget {
             style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 19,
-                fontFamily: "SourceSans3"),
+                fontFamily: "lato"),
           ),
         ));
   }

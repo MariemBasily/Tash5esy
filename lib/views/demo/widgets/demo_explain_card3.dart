@@ -12,7 +12,7 @@ class DemoExplainCard3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
-          width: 280,
+          width: 320,
           height: 200,
           margin: const EdgeInsets.all(10),
           decoration: BoxDecoration(
@@ -34,7 +34,7 @@ class DemoExplainCard3 extends StatelessWidget {
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,
-                fontFamily: "raleway",
+                fontFamily: "lato",
                 shadows: [
                   Shadow(
                     blurRadius: 3.0,
@@ -60,7 +60,7 @@ class DemoExplainCard3 extends StatelessWidget {
             child: Text(
               "startdemo".tr(),
               style: const TextStyle(
-                  fontFamily: "SourceSans3",
+                  fontFamily: "lato",
                   fontSize: 15,
                   color: Colors.white,
                   fontWeight: FontWeight.w600)),

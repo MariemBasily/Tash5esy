@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:tash5esy_app/controller_screen.dart';
 import 'package:tash5esy_app/models/splash_model.dart';
-import 'package:tash5esy_app/views/home_screen/home_screen.dart';
+// import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 import 'package:tash5esy_app/views/lab_results/lab_result_screen.dart';
 import 'package:tash5esy_app/views/login/login_screen.dart';
 import 'package:tash5esy_app/views/nid_verification_1/nid_verification_screen_1.dart';

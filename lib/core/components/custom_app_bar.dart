@@ -6,14 +6,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool centerTitle;
   final Color backgroundColor;
   final Color iconColor;
-  final TextStyle? titleTextStyle;
 
   CustomAppBar({
     required this.title,
     this.centerTitle = true,
     this.backgroundColor = AppColors.white,
     this.iconColor = AppColors.secondary,
-    this.titleTextStyle,
   });
 
   @override
@@ -22,13 +20,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: centerTitle,
       title: Text(
         title,
-        style: titleTextStyle ??
-            TextStyle(
-              color: AppColors.secondary,
-              fontFamily: "lato",
-              fontWeight: FontWeight.bold,
-              fontSize: 26,
-            ),
+        style: TextStyle(
+          color: AppColors.secondary,
+          fontFamily: "Lato",
+          fontWeight: FontWeight.w600, 
+          fontSize: 26,
+        ),
       ),
       backgroundColor: backgroundColor,
       iconTheme: IconThemeData(color: iconColor),

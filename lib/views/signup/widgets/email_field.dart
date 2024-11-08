@@ -1,6 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
+
 class EmailField extends StatelessWidget {
   final Function(String) onSaved;
 
@@ -9,30 +11,30 @@ class EmailField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      padding:
+          const EdgeInsets.symmetric(vertical: 4.0), 
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             "Email".tr(),
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20.0,
+            style: AppTextStyles.bodyTextSmall.copyWith(
               color: AppColors.primary,
-              fontFamily: "lato",
+              fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 8.0),
           TextFormField(
             decoration: InputDecoration(
               hintText: "example@example.com".tr(),
-              hintStyle: TextStyle(color: AppColors.grey, fontSize: 18.0, fontFamily: "lato"),
+              hintStyle:
+                  AppTextStyles.bodyTextSmall.copyWith(color: AppColors.grey),
               filled: true,
               fillColor: AppColors.blue,
-              contentPadding:
-                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
+              contentPadding: EdgeInsets.symmetric(
+                  vertical: 6.0, horizontal: 12.0), 
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12.0),
+                borderRadius:
+                    BorderRadius.circular(8.0), 
                 borderSide: BorderSide.none,
               ),
             ),

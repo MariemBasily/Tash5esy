@@ -31,6 +31,7 @@ class GetStartedScreen extends StatelessWidget {
                   Navigator.pushNamed(context, '/login');
                 },
               ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

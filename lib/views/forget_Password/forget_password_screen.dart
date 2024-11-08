@@ -9,7 +9,6 @@ class ForgetPasswordScreen extends StatelessWidget {
       appBar: CustomAppBarr(
         title: 'Forget Your Password?',
       ),
-      // Custom app bar
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
@@ -20,9 +19,9 @@ class ForgetPasswordScreen extends StatelessWidget {
               child: CodeVerificationSection(), // Code verification section
             ),
 
-            Spacer(), // Add some space between the code section and the button
+            Spacer(), 
             ButtonWidget(),
-            SizedBox(height: 30), // Add space under the button
+            SizedBox(height: 30),
           ],
         ),
       ),

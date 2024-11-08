@@ -21,58 +21,68 @@ class LoginForm extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        const SizedBox(height: 10),
-        Container(
-          decoration: BoxDecoration(
-            color: AppColors.blue,
-            borderRadius: BorderRadius.circular(12.0),
-          ),
-          child: TextField(
-            controller: controller.nationalIdController,
-            decoration: InputDecoration(
-              hintText: 'E.G., 123-456-7890'.tr(),
-              hintStyle: AppTextStyles.bodyTextSmall.copyWith(
-                color: AppColors.grey,
-              ),
-              border: InputBorder.none,
-              contentPadding: EdgeInsets.symmetric(
-                horizontal: 16.0,
-                vertical: 16.0,
-              ),
-              errorText: controller.nationalIdError,
+        const SizedBox(height: 6),
+        TextFormField(
+          controller: controller.nationalIdController,
+          decoration: InputDecoration(
+            hintText: 'E.G., 123-456-7890'.tr(),
+            hintStyle: AppTextStyles.bodyTextSmall.copyWith(
+              color: AppColors.grey,
+            ),
+            filled: true,
+            fillColor: AppColors.blue,
+            contentPadding: EdgeInsets.symmetric(
+              horizontal: 16.0,
+              vertical: 12.0,
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.0),
+              borderSide: BorderSide.none,
             ),
           ),
+          validator: (value) {
+            if (value == null || value.isEmpty) {
+              return 'Please enter your National ID';
+            }
+            return null;
+          },
+          onSaved: (value) => controller.onSaveNationalId(value ?? ''),
         ),
         const SizedBox(height: 20),
         Text(
           'Password'.tr(),
           style: AppTextStyles.bodyTextSmall.copyWith(
             color: AppColors.primary,
-            fontWeight: FontWeight.bold, // Ensure bold for emphasis
+            fontWeight: FontWeight.bold,
           ),
         ),
-        const SizedBox(height: 10),
-        Container(
-          decoration: BoxDecoration(
-            color: AppColors.blue,
-            borderRadius: BorderRadius.circular(12.0),
-          ),
-          child: TextField(
-            controller: controller.passwordController,
-            obscureText: true,
-            decoration: InputDecoration(
-              hintText: '**********'.tr(),
-              hintStyle: AppTextStyles.bodyTextSmall.copyWith(
-                color: AppColors.grey,
-              ),
-              border: InputBorder.none,
-              contentPadding: EdgeInsets.symmetric(
-                horizontal: 16.0,
-                vertical: 16.0,
-              ),
-              errorText: controller.passwordError,
+        const SizedBox(height: 6),
+        TextFormField(
+          controller: controller.passwordController,
+          obscureText: true,
+          decoration: InputDecoration(
+            hintText: '**********'.tr(),
+            hintStyle: AppTextStyles.bodyTextSmall.copyWith(
+              color: AppColors.grey,
+            ),
+            filled: true,
+            fillColor: AppColors.blue,
+            contentPadding: EdgeInsets.symmetric(
+              horizontal: 16.0,
+              vertical: 12.0,
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.0),
+              borderSide: BorderSide.none,
             ),
           ),
+          validator: (value) {
+            if (value == null || value.isEmpty) {
+              return 'Please enter your password';
+            }
+            return null;
+          },
+          onSaved: (value) => controller.onSavePassword(value ?? ''),
         ),
       ],
     );

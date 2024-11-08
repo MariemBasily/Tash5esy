@@ -43,7 +43,8 @@ class _RememberMeWidgetState extends State<RememberMeWidget> {
         ),
         TextButton(
           onPressed: () {
-            Navigator.pushNamed(context, '/forgot_password');
+            Navigator.pushNamed(
+                context, '/ForgetPasswordScreen'); 
           },
           child: Text(
             'Forget Password?'.tr(),

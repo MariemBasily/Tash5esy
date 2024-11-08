@@ -12,6 +12,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -30,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                     RememberMeWidget(),
                   ],
                 ),
-                const SizedBox(height: 100),
+                const SizedBox(height: 50),
                 LoginFooter(controller: controller),
                 const SizedBox(height: 20),
               ],

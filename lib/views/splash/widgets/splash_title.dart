@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tash5esy_app/core/style/colors.dart'; 
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
+import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class SplashTitle extends StatelessWidget {
@@ -9,25 +10,19 @@ class SplashTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('tash'.tr()); 
-    print('5esy'.tr()); 
+    print('tash'.tr());
+    print('5esy'.tr());
     return RichText(
       text: TextSpan(
-        text: 'Tash'.tr(), 
-        style: TextStyle(
-          fontSize: 50,
-          fontWeight: FontWeight.bold, 
+        text: 'Tash'.tr(),
+        style: AppTextStyles.solganText.copyWith(
           color: AppColors.green, 
-          fontFamily: "lato",
         ),
         children: [
           TextSpan(
-            text: '5esy'.tr(), 
-            style: TextStyle(
-              fontSize: 50,
-              fontWeight: FontWeight.bold, 
-              color: AppColors.secondary,
-              fontFamily: "lato",
+            text: '5esy'.tr(),
+            style: AppTextStyles.solganText.copyWith(
+              color: AppColors.secondary, 
             ),
           ),
         ],

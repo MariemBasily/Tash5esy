@@ -12,25 +12,27 @@ class GetStartedScreen extends StatelessWidget {
     // String data = ModalRoute.of(context)!.settings.arguments as String;
 
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const SizedBox(height: 40),
-            const HeaderImage(),
-            const SizedBox(height: 2),
-            const WelcomeText(),
-            const SizedBox(height: 30),
-            const DescriptionText(),
-            const SizedBox(height: 100),
-            CustomButton2(
-              label: 'Get Started',
-              onPressed: () {
-                Navigator.pushNamed(context, '/login');
-              },
-            ),
-          ],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const SizedBox(height: 40),
+              const HeaderImage(),
+              const SizedBox(height: 2),
+              const WelcomeText(),
+              const SizedBox(height: 30),
+              const DescriptionText(),
+              const Spacer(),
+              CustomButton2(
+                label: 'Get Started',
+                onPressed: () {
+                  Navigator.pushNamed(context, '/login');
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );

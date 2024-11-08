@@ -27,13 +27,11 @@ class LoginScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     LoginForm(controller: controller), // Form handling
-                    RememberMeWidget(), // Remember Me checkbox and Forgot Password
+                    RememberMeWidget(),
                   ],
                 ),
                 const SizedBox(height: 100),
-                LoginFooter(
-                    controller:
-                        controller), // New Footer containing login button and sign-up prompt
+                LoginFooter(controller: controller),
                 const SizedBox(height: 20),
               ],
             ),

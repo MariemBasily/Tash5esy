@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
 class WelcomeText extends StatelessWidget {
@@ -7,7 +8,7 @@ class WelcomeText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 14.0), 
+      padding: const EdgeInsets.only(left: 14.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -16,30 +17,24 @@ class WelcomeText extends StatelessWidget {
             children: [
               Text(
                 "Welcome to ",
-                style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
+                style: AppTextStyles.bodyTextExtraLarge.copyWith(
                   color: AppColors.secondary,
-                  fontFamily: "lato",
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               RichText(
                 text: TextSpan(
                   text: 'Tash',
-                  style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
+                  style: AppTextStyles.bodyTextExtraLarge.copyWith(
                     color: AppColors.green,
-                    fontFamily: "lato",
+                    fontWeight: FontWeight.bold,
                   ),
                   children: [
                     TextSpan(
                       text: '5esy',
-                      style: TextStyle(
-                        fontSize: 35,
-                        fontWeight: FontWeight.bold,
+                      style: AppTextStyles.bodyTextExtraLarge.copyWith(
                         color: AppColors.secondary,
-                        fontFamily: "lato",
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],

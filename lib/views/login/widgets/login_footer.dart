@@ -12,9 +12,9 @@ class LoginFooter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        LoginButton(controller: controller), // Moved login button logic here
+        LoginButton(controller: controller),
         const SizedBox(height: 5),
-        SignupPrompt(), // Moved signup prompt logic here
+        SignupPrompt(),
       ],
     );
   }

@@ -4,6 +4,11 @@ class AppTextStyles {
   static const String _fontFamily = 'Lato';
 
   // Body text styles in various sizes
+  static const TextStyle solganText = TextStyle(
+    fontFamily: _fontFamily,
+    fontSize: 50,
+    fontWeight: FontWeight.bold,
+  );
   static const TextStyle bodyTextForm = TextStyle(
     fontFamily: _fontFamily,
     fontSize: 14,
@@ -17,7 +22,7 @@ class AppTextStyles {
 
   static const TextStyle bodyTextMedium = TextStyle(
     fontFamily: _fontFamily,
-    fontSize: 18,
+    fontSize: 17,
     fontWeight: FontWeight.w300,
   );
 

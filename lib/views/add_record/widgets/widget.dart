@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title; 
 
-  CustomAppBar({required this.title});
+  CustomAppBar({required this.title, required bool centerTitle});
 
   @override
   Widget build(BuildContext context) {

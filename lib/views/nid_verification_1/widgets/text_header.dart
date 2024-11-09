@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
 class TextHeaderWidget extends StatelessWidget {
@@ -8,7 +9,6 @@ class TextHeaderWidget extends StatelessWidget {
     return Text(
       "In Order To Complete Your Signing Up Please Upload Your National ID Card".tr(),
       textAlign: TextAlign.center,
-      style: TextStyle(color: AppColors.grey,fontFamily: "lato"),
-    );
+      style: AppTextStyles.bodyTextSmall.copyWith(color: AppColors.grey),);
   }
 }

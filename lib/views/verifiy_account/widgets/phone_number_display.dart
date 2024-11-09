@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 class PhoneNumberDisplay extends StatelessWidget {
   final String phoneNumber;
@@ -9,11 +10,9 @@ class PhoneNumberDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       phoneNumber,
-      style: TextStyle(
-        fontSize: 18,
+      style: AppTextStyles.bodyTextMedium2.copyWith(
+        color: AppColors.secondary,
         fontWeight: FontWeight.bold,
-        color: AppColors.grey,
-        fontFamily: "lato",
       ),
     );
   }

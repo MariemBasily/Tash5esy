@@ -4,8 +4,11 @@ import 'package:tash5esy_app/core/style/colors.dart';
 
 class PinCodeInput extends StatelessWidget {
   final ValueChanged<String> onChanged;
+  final TextEditingController controller;
 
-  const PinCodeInput({required this.onChanged});
+  const PinCodeInput(
+      {Key? key, required this.onChanged, required this.controller})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +16,16 @@ class PinCodeInput extends StatelessWidget {
       appContext: context,
       length: 6,
       onChanged: onChanged,
+      controller: controller,
       pinTheme: PinTheme(
         shape: PinCodeFieldShape.box,
-        borderRadius: BorderRadius.circular(5),
-        fieldHeight: 50,
-        fieldWidth: 40,
-        activeFillColor: Colors.white, // Active fill color
-        inactiveColor: AppColors.grey, // Grey outline when inactive
-        activeColor: AppColors.secondary, // Secondary color when active
-        selectedColor: AppColors.secondary, // Secondary color when selected
+        borderRadius: BorderRadius.circular(15),
+        fieldHeight: 60,
+        fieldWidth: 50,
+        activeFillColor: Colors.white,
+        inactiveColor: AppColors.grey,
+        activeColor: AppColors.secondary,
+        selectedColor: AppColors.secondary,
       ),
     );
   }

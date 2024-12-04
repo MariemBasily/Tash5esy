@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/components/custom_button.dart';
+import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/add_record/widgets/widget.dart';
+import 'package:tash5esy_app/views/general_information/general_information_screen.dart';
 import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
 
 class AddRecordScreen extends StatelessWidget {
@@ -18,11 +20,11 @@ class AddRecordScreen extends StatelessWidget {
               height: 152,
             ),
             const SizedBox(height: 20),
-            const Text(
+            Text(
               'You Have Not\nAdded Any Medical\nRecords Yet',
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Color(0xFF034078),
+                color: AppColors.primary,
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 fontFamily: "lato",
@@ -38,7 +40,7 @@ class AddRecordScreen extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (builder) => MedicalHistoryScreen(),
+                builder: (builder) => GeneralInformationScreen(),
               ),
             );
           },

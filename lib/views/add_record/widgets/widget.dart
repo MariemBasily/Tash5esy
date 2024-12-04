@@ -1,58 +1,79 @@
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/core/style/colors.dart';
+import 'package:tash5esy_app/views/home_screen/home_screen.dart';
 //import 'package:tash5esy_app/core/style/colors.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final String title; 
+  final String title;
 
   CustomAppBar({required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar: AppBar(
+      appBar: AppBar(
+        backgroundColor: AppColors.primary,
 
-      backgroundColor: Color(0xFF034078), 
-      // Background color of AppBar
-    leading: Padding(
-            padding: const EdgeInsets.all(8.0), // Adjust padding for the white square
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white, // White square background
-                shape: BoxShape.rectangle, // Rectangle shape
-                borderRadius: BorderRadius.circular(8), // Rounded corners (optional)
-              ),
-              padding: EdgeInsets.all(4), // Padding inside the white square
-              child: IconButton(
-                icon: Icon(Icons.arrow_back_ios), // Use any icon
-                color: Color(0xFF034078), // Icon color
-                onPressed: () {
-                  // Action when the button is pressed (usually back navigation)
-                },
-              ),
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            padding: EdgeInsets.all(4),
+            child: IconButton(
+              icon: Icon(Icons.arrow_back_ios),
+              color: AppColors.white,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => HomeScreen(),
+                  ),
+                );
+              },
             ),
-    ),
-      // leading: IconButton(
-      //   icon: Icon(Icons.arrow_back_ios), 
-      //   onPressed: () {
-      //   },
-      // ),
-      title: Text(
-        'Add Records',
-        style: TextStyle(
-          color: Colors.white, // Text color of title
-          fontSize: 25,
-          fontFamily: "lato",
+          ),
+        ),
+
+        title: Text(
+          'Add Records',
+          style: TextStyle(
+           color: AppColors.white, // Text color of title
+            fontSize: 25,
+            fontFamily: "lato",
+          ),
+        ),
+        centerTitle: true, // Centers the title
+        iconTheme: IconThemeData(
+          color: AppColors.white, // Icon color
         ),
       ),
-      centerTitle: true, // Centers the title
-      iconTheme: IconThemeData(
-        color: Colors.white, // Icon color
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              "assets/images/add medical history.png",
+              width: 117,
+              height: 152,
+            ),
+            const SizedBox(height: 20),
+            Text(
+              'You Have Not\nAdded Any Medical\nRecords Yet',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: AppColors.primary,
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                fontFamily: "lato",
+              ),
+            ),
+          ],
+        ),
       ),
-    ),
-  );
+    );
   }
+
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
-  
+
   widget({required Center child}) {}
 }

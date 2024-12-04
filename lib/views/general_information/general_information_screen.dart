@@ -1,36 +1,73 @@
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/core/style/colors.dart';
+import 'package:tash5esy_app/views/add_record/add_record_screen.dart';
+import 'package:tash5esy_app/views/general_information/widgets/butttom_navigation_button.dart';
+import 'package:tash5esy_app/views/general_information/widgets/form_widget.dart';
 import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
-import 'package:tash5esy_app/views/medical_record/widgets/custom_app_bar.dart';
-import 'package:tash5esy_app/views/medical_record/widgets/background_widget.dart';
-import 'package:tash5esy_app/views/past_illnesses_1/widgets/buttom_navigation_button.dart';
-import 'widgets/form_widget.dart';
 
-class GeneralInformationScreen extends StatefulWidget {
-  @override
-  _GeneralInformationFormState createState() => _GeneralInformationFormState();
-}
+class GeneralInformationScreen extends StatelessWidget {
+  const GeneralInformationScreen({Key? key}) : super(key: key);
 
-class _GeneralInformationFormState extends State<GeneralInformationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
-        title: 'Continue',
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => MedicalHistoryScreen()),
-          );
-        },
-      ), // Custom AppBar
-      body: Stack(
-        children: [
-          BackgroundWidget(), // Background Widget with the oval shape
-          FormWidget(),
-          // Form Widget
-        ],
+      backgroundColor: AppColors.primary,
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                children: [
+                  // Header
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (builder) => AddRecordScreen(),
+                            ),
+                          );
+                        },
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                          color: AppColors.white,
+                        ),
+                      ),
+                      Text(
+                        'Create A Health Profile',
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+
+                  // Form Widget
+                  const FormWidget(),
+
+                  // Bottom Navigation Button
+                  BottomNavigationButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (builder) => MedicalHistoryScreen(),
+                        ),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
       ),
-      bottomNavigationBar: BottomNavigationButton(),
     );
   }
 }

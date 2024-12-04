@@ -1,36 +1,75 @@
 import 'package:flutter/material.dart';
-import 'package:tash5esy_app/views/add_record/add_record_screen.dart';
-import 'package:tash5esy_app/views/medical_record/widgets/buttom_navigation_button.dart';
-import 'package:tash5esy_app/views/medical_record/widgets/custom_app_bar.dart';
-import 'widgets/background_widget.dart';
-import 'widgets/medical_form_widget.dart';
+import 'package:tash5esy_app/core/style/colors.dart';
+import 'package:tash5esy_app/views/general_information/general_information_screen.dart';
+import 'package:tash5esy_app/views/general_information/widgets/butttom_navigation_button.dart';
+import 'package:tash5esy_app/views/general_information/widgets/form_widget.dart';
+import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
+import 'package:tash5esy_app/views/medical_record/widgets/form_screen.dart';
 
-class MedicalHistoryScreen extends StatefulWidget {
-  @override
-  _MedicalHistoryFormState createState() => _MedicalHistoryFormState();
-}
+class MedicalHistoryScreen extends StatelessWidget {
+  const MedicalHistoryScreen({Key? key}) : super(key: key);
 
-class _MedicalHistoryFormState extends State<MedicalHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
-        title: 'Create A Health Profile',
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => AddRecordScreen()),
-          );
-        },
-      ), // Custom AppBar
-      body: Stack(
-        children: [
-          BackgroundWidget(), // Background Widget with the oval shape
-          MedicalFormWidget(), // Form Widget
-        ],
-      ),
+      backgroundColor: AppColors.primary,
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                children: [
+                  // Header
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (builder) => GeneralInformationScreen(),
+                            ),
+                          );
+                        },
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                          color: AppColors.white,
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      Text(
+                        'Continue',
+                        style: TextStyle(
+                          color: AppColors.white,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
 
-      bottomNavigationBar: CustomBottomNavigationBar(),
+                  // Form Widget
+                  const form_screen(),
+
+                  // Bottom Navigation Button
+                  BottomNavigationButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (builder) => GeneralInformationScreen(),
+                        ),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

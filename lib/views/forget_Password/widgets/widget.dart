@@ -11,7 +11,7 @@ class CustomAppBarr extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.white,
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios, color: AppColors.secondary),
           onPressed: () {
@@ -22,7 +22,9 @@ class CustomAppBarr extends StatelessWidget implements PreferredSizeWidget {
         title: Text(
           'Forget Your Password?',
           style: TextStyle(
-              color: AppColors.secondary, fontWeight: FontWeight.bold,fontFamily: "lato"),
+              color: AppColors.secondary,
+              fontWeight: FontWeight.bold,
+              fontFamily: "lato"),
         ),
         centerTitle: true,
       ),
@@ -54,10 +56,10 @@ class CodeVerificationSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Phone Number Label
-              const Text(
+              Text(
                 'Phone Number',
                 style: TextStyle(
-                    color: Color(0xFF034078),
+                    color: AppColors.primary,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                     fontFamily: "lato"),
@@ -68,7 +70,7 @@ class CodeVerificationSection extends StatelessWidget {
                 keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Color(0xFFECF1FF),
+                  fillColor: AppColors.white,
                   hintText: 'E.G., +20154218457',
                   hintStyle: const TextStyle(
                     color: Colors.grey,
@@ -82,12 +84,13 @@ class CodeVerificationSection extends StatelessWidget {
               ),
               SizedBox(height: 16),
               // National ID Label
-              const Text(
+              Text(
                 'National ID',
                 style: TextStyle(
-                    color: Color(0xFF034078),
+                    color: AppColors.primary,
                     fontSize: 16,
-                    fontWeight: FontWeight.bold,fontFamily:"lato"),
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "lato"),
               ),
               SizedBox(height: 8),
               // National ID Input Field
@@ -95,10 +98,10 @@ class CodeVerificationSection extends StatelessWidget {
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xFFECF1FF),
+                  fillColor: AppColors.white,
                   hintText: 'E.G., 123-456-7890',
-                  hintStyle: const TextStyle(
-                    color: Colors.grey,
+                  hintStyle: TextStyle(
+                    color: AppColors.grey2,
                     fontFamily: "lato",
                   ),
                   border: OutlineInputBorder(

@@ -9,6 +9,8 @@ class UserController {
   String phoneNumber = '';
   String password = '';
 
+  set confirmPassword(String confirmPassword) {}
+
   bool validateForm() {
     return formKey.currentState?.validate() ?? false;
   }

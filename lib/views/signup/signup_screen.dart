@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/controllers/signup_controller.dart';
+import 'package:tash5esy_app/core/components/custom_app_bar.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/signup/widgets/already_have_an_account.dart';
 import 'package:tash5esy_app/views/signup/widgets/confirm_password_field.dart';
@@ -22,16 +23,9 @@ class _NewAccountScreenState extends State<NewAccountScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "New Account".tr(),
-          style: TextStyle(
-            color: AppColors.secondary,
-            fontWeight: FontWeight.bold,
-            fontSize: 26,
-            fontFamily: "lato",
-          ),
-        ),
+      backgroundColor: AppColors.white,
+      appBar: CustomAppBar(
+        title: "New Account".tr(),
         centerTitle: true,
       ),
       body: Padding(
@@ -41,21 +35,17 @@ class _NewAccountScreenState extends State<NewAccountScreen> {
           child: ListView(
             children: [
               FullNameField(onSaved: (value) => _controller.fullName = value),
-              SizedBox(height: 16),
               EmailField(onSaved: (value) => _controller.email = value),
-              SizedBox(height: 16),
               NationalIdField(
                   onSaved: (value) => _controller.nationalId = value),
-              SizedBox(height: 16),
               PhoneNumberField(
                   onSaved: (value) => _controller.phoneNumber = value),
-              SizedBox(height: 16),
               PasswordField(onSaved: (value) => _controller.password = value),
-              SizedBox(height: 16),
-              ConfirmPasswordField(onSaved: (value) {}),
-              SizedBox(height: 20),
+              ConfirmPasswordField(onSaved: (value) {
+                _controller.confirmPassword = value;
+              }),
+              const SizedBox(height: 20),
               NextButton(),
-              SizedBox(height: 20),
               AlreadyHaveAccount(),
             ],
           ),

@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
 class TextHeader2 extends StatelessWidget {
@@ -8,7 +9,7 @@ class TextHeader2 extends StatelessWidget {
     return Text(
       "It’s required by law to verify your identity as a new user".tr(),
       textAlign: TextAlign.center,
-      style: TextStyle(color: AppColors.grey,fontFamily: "lato"),
+      style: AppTextStyles.bodyTextSmall.copyWith(color: AppColors.grey),
     );
   }
 }

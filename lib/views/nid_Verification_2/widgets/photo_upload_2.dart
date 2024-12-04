@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
 import 'dart:io';
 
 class PhotoUploadWidget extends StatelessWidget {
@@ -35,17 +36,26 @@ class PhotoUploadWidget extends StatelessWidget {
               fit: BoxFit.cover,
             )
           else
-            Image.asset("assets/images/selfi photo.png",height: 100, width: 100), // Show the default icon when no image
+            Image.asset(
+              "assets/images/selfi photo.png",
+              height: 100,
+              width: 100,
+            ), // Show the default icon when no image
+          SizedBox(height: 8),
           Text(
             label,
-            style: TextStyle(
-              fontSize: 16,
+            style: AppTextStyles.bodyTextSmall.copyWith(
               fontWeight: FontWeight.bold,
               color: AppColors.secondary,
             ),
           ),
           SizedBox(height: 8),
-          Text(subText, style: TextStyle(color: AppColors.grey2)),
+          Text(
+            subText,
+            style: AppTextStyles.bodyTextForm.copyWith(
+              color: AppColors.grey2,
+            ),
+          ),
           SizedBox(height: 10),
           ElevatedButton(
             onPressed: onPressed,
@@ -59,11 +69,17 @@ class PhotoUploadWidget extends StatelessWidget {
               mainAxisSize:
                   MainAxisSize.min, // This ensures the button fits the content
               children: [
-                Image.asset("assets/icons/take selfi _icon.png",height: 20, width: 20), // Add camera icon
-                SizedBox(width: 8), // Space between icon and text
+                Image.asset(
+                  "assets/icons/take selfi _icon.png",
+                  height: 20,
+                  width: 20,
+                ), 
+                SizedBox(width: 8), 
                 Text(
                   "Take a selfie".tr(),
-                  style: TextStyle(color: AppColors.white),
+                  style: AppTextStyles.bodyTextForm.copyWith(
+                    color: AppColors.white,
+                  ),
                 ),
               ],
             ),

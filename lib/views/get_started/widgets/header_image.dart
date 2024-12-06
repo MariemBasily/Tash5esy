@@ -8,7 +8,8 @@ class HeaderImage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10.0),
       child: Container(
-        width: MediaQuery.of(context).size.width, height: 300,
+        width: MediaQuery.of(context).size.width,
+        height: 300,
         child: Image.asset(
           'assets/images/get started.png',
           fit: BoxFit.cover,

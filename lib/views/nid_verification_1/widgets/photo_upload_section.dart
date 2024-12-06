@@ -16,18 +16,18 @@ class PhotoUploadSection extends StatelessWidget {
           label: "Front Of NID Card".tr(),
           subText: "Take a Front Photo Of Your NID Card".tr(),
           onPressed: () async {
-            await controller.pickImage(context, true); // Assume this updates the frontImagePath
+            await controller.pickImage(context, true); 
           },
-          imagePath: controller.model.frontImagePath, // Pass the path of the front NID image
+          imagePath: controller.model.frontImagePath,
         ),
         SizedBox(height: 20),
         PhotoUploadWidget(
           label: "Back Of NID Card".tr(),
           subText: "Take a Back Photo Of Your NID Card.".tr(),
           onPressed: () async {
-            await controller.pickImage(context, false); // Assume this updates the backImagePath
+            await controller.pickImage(context, false); 
           },
-          imagePath: controller.model.backImagePath, // Pass the path of the back NID image
+          imagePath: controller.model.backImagePath, 
         ),
       ],
     );

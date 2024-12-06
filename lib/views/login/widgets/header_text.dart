@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:tash5esy_app/core/style/app_text_styles.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
 class SignInHeaderWidget extends StatelessWidget {
@@ -9,20 +10,15 @@ class SignInHeaderWidget extends StatelessWidget {
       children: [
         Text(
           "Let's sign you in".tr(),
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
+          style: AppTextStyles.bodyTextMedium2.copyWith(
             color: AppColors.secondary,
-            fontFamily: "lato",
           ),
         ),
         const SizedBox(height: 10),
         Text(
           'Login To Your Existing Account'.tr(),
-          style: TextStyle(
-            fontSize: 16,
+          style: AppTextStyles.bodyTextSmall.copyWith(
             color: AppColors.grey,
-            fontFamily: "lato",
           ),
         ),
       ],

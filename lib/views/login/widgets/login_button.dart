@@ -12,7 +12,9 @@ class LoginButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomButton(
       label: 'Login'.tr(),
-      onPressed: () => _handleLogin(context), text: '', child: Text('') ,
+      onPressed: () => _handleLogin(context),
+      text: '',
+      child: Text(''),
     );
   }
 

@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/components/custom_button.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
@@ -8,13 +9,16 @@ class AddRecordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'Add Record'),
+      appBar: CustomAppBar(
+        title: 'Add Record'.tr(),
+        centerTitle: true,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/add medical history.png",
+              "assets/images/add_medical_history.png",
               width: 117,
               height: 152,
             ),
@@ -26,7 +30,7 @@ class AddRecordScreen extends StatelessWidget {
                 color: AppColors.primary,
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
-                fontFamily: "lato",
+                fontFamily: "Lato",
               ),
             ),
           ],
@@ -40,10 +44,13 @@ class AddRecordScreen extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (builder) => GeneralInformationScreen(),
+      
               ),
             );
           },
-          label: 'Add Records', text: '', child: Text(''), 
+          label: 'Add Records',
+          text: '',
+          child: Text(''),
         ),
       ),
     );

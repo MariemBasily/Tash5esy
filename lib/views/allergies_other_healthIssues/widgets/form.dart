@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 
-class FormWidget extends StatelessWidget {
-  const FormWidget({Key? key}) : super(key: key);
+class AllergyForm extends StatelessWidget {
+  const AllergyForm({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +26,18 @@ class FormWidget extends StatelessWidget {
           SizedBox(height: 20),
 
           // Input Fields
-          CustomTextField( label: 'First name & Last name', initialValue: 'Jessica Jung'),
-          CustomTextField(label: 'Age', initialValue: '26-31'),
-          CustomTextField(label: 'Gender', initialValue: 'Male'),
-          CustomTextField( label: 'Date of birth', initialValue: '1999/09/21'),
-          CustomTextField(label: 'Your Job', initialValue: 'Engineer'),
-          CustomTextField(label: 'Are You Married?', initialValue: 'No'),
-          CustomTextField( label: 'Where do you live?', initialValue: 'Cairo'),
+          CustomTextField( label: 'Do you have any allergies?', initialValue: 'NO'),
+          CustomTextField(label: 'What kind of allergies do you have?', initialValue: 'Eye Allergies'),
+          CustomTextField(label: 'When was your allergy first diagnosed?', initialValue: '7 years ago'),
+          CustomTextField( label: 'Do you have any family members with allergies?', initialValue: 'No'),
+          CustomTextField(label: 'What happens to your body when exposed to an allergen?', initialValue: 'Wheezing and difficulty breathing'),
+          CustomTextField(label: 'Have you experienced any new allergens recently?', initialValue: 'No'),
+          
+          CustomTextField(label: 'Do you have a family history of chronic diseases such as cancer, diabetes, heart disease?', initialValue: 'If yes say what is?'),
+          CustomTextField(label: 'Have there been any genetic disorders or congenital disabilities in your family?', initialValue: 'If yes say what is?'),
+          CustomTextField( label: 'Have your family members been hospitalized or had major medical procedures?', initialValue: 'If yes say what is?'),
+          CustomTextField(label: 'Have any family members passed away at a younger age due to health-related issues?', initialValue: 'If yes say what is?'),
+          CustomTextField(label: 'Do you have a disabled person in your family?', initialValue: 'Yes'),
 
           SizedBox(height: 20),
         ],

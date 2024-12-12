@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/general_information/general_information_screen.dart';
-import 'package:tash5esy_app/views/general_information/widgets/butttom_navigation_button.dart';
-import 'package:tash5esy_app/views/general_information/widgets/form_widget.dart';
-import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
 import 'package:tash5esy_app/views/medical_record/widgets/form_screen.dart';
+import 'package:tash5esy_app/views/past_illnesses_1/past_illnesses_screen_1.dart';
+import 'package:tash5esy_app/views/past_illnesses_2/widgets/BottomNavigationButton.dart';
 
 class MedicalHistoryScreen extends StatelessWidget {
   const MedicalHistoryScreen({Key? key}) : super(key: key);
@@ -54,12 +53,12 @@ class MedicalHistoryScreen extends StatelessWidget {
                   const form_screen(),
 
                   // Bottom Navigation Button
-                  BottomNavigationButton(
+                  BottomNavigationButton2(
                     onPressed: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (builder) => GeneralInformationScreen(),
+                          builder: (builder) => PastIllnessesScreen1(),
                         ),
                       );
                     },

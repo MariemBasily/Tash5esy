@@ -4,7 +4,6 @@ import 'package:tash5esy_app/core/components/custom_button.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/add_record/widgets/widget.dart';
 import 'package:tash5esy_app/views/general_information/general_information_screen.dart';
-import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
 
 class AddRecordScreen extends StatelessWidget {
   @override
@@ -19,7 +18,7 @@ class AddRecordScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/add_medical_history.png",
+              "assets/images/add medical history.png",
               width: 117,
               height: 152,
             ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/add_record/add_record_screen.dart';
-import 'package:tash5esy_app/views/general_information/widgets/butttom_navigation_button.dart';
 import 'package:tash5esy_app/views/general_information/widgets/form_widget.dart';
 import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
+import 'package:tash5esy_app/views/past_illnesses_2/widgets/BottomNavigationButton.dart';
 
 class GeneralInformationScreen extends StatelessWidget {
   const GeneralInformationScreen({Key? key}) : super(key: key);
@@ -31,12 +31,12 @@ class GeneralInformationScreen extends StatelessWidget {
                             ),
                           );
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.arrow_back_ios,
                           color: AppColors.white,
                         ),
                       ),
-                      Text(
+                      const Text(
                         'Create A Health Profile',
                         style: TextStyle(
                           color: AppColors.white,
@@ -52,7 +52,7 @@ class GeneralInformationScreen extends StatelessWidget {
                   const FormWidget(),
 
                   // Bottom Navigation Button
-                  BottomNavigationButton(
+                  BottomNavigationButton2(
                     onPressed: () {
                       Navigator.push(
                         context,

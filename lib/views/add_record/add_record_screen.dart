@@ -18,7 +18,7 @@ class AddRecordScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/add_medical_history.png",
+              "assets/images/add medical history.png",
               width: 117,
               height: 152,
             ),

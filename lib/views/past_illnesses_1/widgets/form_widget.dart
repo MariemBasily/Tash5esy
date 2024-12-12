@@ -12,7 +12,7 @@ class past_illnesses extends StatelessWidget {
         color: AppColors.white,
         borderRadius: BorderRadius.circular(20),
       ),
-      child: Column(
+      child: const Column(
         children: [
           Text(
             'General Information',
@@ -23,17 +23,17 @@ class past_illnesses extends StatelessWidget {
               color: AppColors.primary,
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
 
           // Input Fields
-          const CustomTextField( label: 'What illnesses or diseases have you had in the past?', initialValue: 'Cancer'),
-          const CustomTextField(label: 'Since your initial diagnosis and treatment, have your illnesses returned?', initialValue: 'No'),
-          const CustomTextField(label: 'What medical care did you get for the illness?', initialValue: 'Vitamins and supplements+'),
-          const CustomTextField( label: 'When did you first notice the diseases symptoms?', initialValue: '17/9'),
-          const CustomTextField(label: 'Do you have any emergency medication on you?', initialValue: 'Antibiotics'),
-          const CustomTextField(label: 'Have you ever suffered a fracture or sprain?', initialValue: 'Antibiotics'),
+          CustomTextField( label: 'What illnesses or diseases have you had in the past?', initialValue: 'Cancer'),
+          CustomTextField(label: 'Since your initial diagnosis and treatment, have your illnesses returned?', initialValue: 'No'),
+          CustomTextField(label: 'What medical care did you get for the illness?', initialValue: 'Vitamins and supplements+'),
+          CustomTextField( label: 'When did you first notice the diseases symptoms?', initialValue: '17/9'),
+          CustomTextField(label: 'Do you have any emergency medication on you?', initialValue: 'Antibiotics'),
+          CustomTextField(label: 'Have you ever suffered a fracture or sprain?', initialValue: 'Antibiotics'),
 
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
         ],
       ),
     );
@@ -46,8 +46,8 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     required this.label,
     required this.initialValue,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,7 @@ class CustomTextField extends StatelessWidget {
       children: [
         Text(
           label,
-          style: TextStyle(
+          style: const TextStyle(
           color: AppColors.grey2,
           fontSize: 14,
           fontWeight: FontWeight.bold,
@@ -70,17 +70,20 @@ class CustomTextField extends StatelessWidget {
         const SizedBox(height: 8),
         TextFormField(
           controller: controller,
+            style: const TextStyle(
+            color: Color.fromARGB(144, 158, 158, 158), 
+          ),
           decoration: InputDecoration(
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
               borderSide:
-                   BorderSide(color: AppColors.grey),
+                   const BorderSide(color: AppColors.grey),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(color: AppColors.grey),
+              borderSide: const BorderSide(color: AppColors.grey),
             ),
           ),
 
@@ -95,32 +98,32 @@ class CustomTextField extends StatelessWidget {
                     child: Text('A+'),
                   ),
                   DropdownMenuItem(
-                    child: Text('A-'),
                     value: 'A-',
+                    child: Text('A-'),
                   ),
                   DropdownMenuItem(
-                    child: Text('B+'),
                     value: 'B+',
+                    child: Text('B+'),
                   ),
                   DropdownMenuItem(
-                    child: Text('B-'),
                     value: 'B-',
+                    child: Text('B-'),
                   ),
                   DropdownMenuItem(
-                    child: Text('AB+'),
                     value: 'AB+',
+                    child: Text('AB+'),
                   ),
                   DropdownMenuItem(
-                    child: Text('AB-'),
                     value: 'AB-',
+                    child: Text('AB-'),
                   ),
                   DropdownMenuItem(
-                    child: Text('O+'),
                     value: 'O+',
+                    child: Text('O+'),
                   ),
                   DropdownMenuItem(
-                    child: Text('O-'),
                     value: 'O-',
+                    child: Text('O-'),
                   ),
                 ], onChanged: (String? value) {  setState(() {
                     selectedBloodGroup = value;

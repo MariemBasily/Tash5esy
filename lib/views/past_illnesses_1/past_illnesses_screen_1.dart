@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
-import 'package:tash5esy_app/views/general_information/general_information_screen.dart';
-import 'package:tash5esy_app/views/general_information/widgets/butttom_navigation_button.dart';
 import 'package:tash5esy_app/views/medical_record/medical_history_screen.dart';
-import 'package:tash5esy_app/views/medical_record/widgets/form_screen.dart';
 import 'package:tash5esy_app/views/past_illnesses_1/widgets/form_widget.dart';
+import 'package:tash5esy_app/views/past_illnesses_2/past_illnesses_screen_2.dart';
+import 'package:tash5esy_app/views/past_illnesses_2/widgets/BottomNavigationButton.dart';
 
 class PastIllnessesScreen1 extends StatelessWidget {
   const PastIllnessesScreen1({Key? key}) : super(key: key);
@@ -32,13 +31,13 @@ class PastIllnessesScreen1 extends StatelessWidget {
                             ),
                           );
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.arrow_back_ios,
                           color: AppColors.white,
                         ),
                       ),
                       const SizedBox(width: 10),
-                      Text(
+                      const Text(
                         'Past Illnesses',
                         style: TextStyle(
                           color: AppColors.white,
@@ -54,12 +53,12 @@ class PastIllnessesScreen1 extends StatelessWidget {
                   const past_illnesses(),
 
                   // Bottom Navigation Button
-                  BottomNavigationButton(
+                  BottomNavigationButton2(
                     onPressed: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (builder) => GeneralInformationScreen(),
+                          builder: (builder) => PastIllnessesScreen2(),
                         ),
                       );
                     },

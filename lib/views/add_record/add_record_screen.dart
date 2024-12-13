@@ -23,7 +23,7 @@ class AddRecordScreen extends StatelessWidget {
               height: 152,
             ),
             const SizedBox(height: 20),
-            Text(
+            const Text(
               'You Have Not\nAdded Any Medical\nRecords Yet',
               textAlign: TextAlign.center,
               style: TextStyle(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tash5esy_app/core/style/colors.dart';
 import 'package:tash5esy_app/views/home_screen/home_screen.dart';
-//import 'package:tash5esy_app/core/style/colors.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -13,7 +12,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primary,
-
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
@@ -32,18 +30,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
         ),
-
-        title: Text(
+        title: const Text(
           'Add Records',
           style: TextStyle(
-           color: AppColors.white, // Text color of title
+            color: AppColors.white,
             fontSize: 25,
             fontFamily: "lato",
           ),
         ),
-        centerTitle: true, // Centers the title
-        iconTheme: IconThemeData(
-          color: AppColors.white, // Icon color
+        centerTitle: true,
+        iconTheme: const IconThemeData(
+          color: AppColors.white,
         ),
       ),
       body: Center(
@@ -56,7 +53,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               height: 152,
             ),
             const SizedBox(height: 20),
-            Text(
+            const Text(
               'You Have Not\nAdded Any Medical\nRecords Yet',
               textAlign: TextAlign.center,
               style: TextStyle(

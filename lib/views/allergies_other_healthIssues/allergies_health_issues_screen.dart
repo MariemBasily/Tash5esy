@@ -6,7 +6,7 @@ import 'package:tash5esy_app/views/past_illnesses_2/past_illnesses_screen_2.dart
 import 'package:tash5esy_app/views/past_illnesses_2/widgets/BottomNavigationButton.dart';
 
 class AllergiesHealthIssuesScreen extends StatelessWidget {
-  const AllergiesHealthIssuesScreen({Key? key}) : super(key: key);
+  const AllergiesHealthIssuesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

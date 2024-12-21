@@ -115,5 +115,115 @@
     "surgeon": "Surgeon",
     "cardiologist": "Cardiologist",
     "transactions": "Transactions",
-    "costs_payments": "Costs & Payments"
+    "costs_payments": "Costs & Payments",
+
+
+
+
+    "Add Record"    : "Add Record" ,
+    "You have not added any medical records yet " : "You have not added any medical records yet ",
+    "Add Records" :  "Add Records",
+    " Create A Health Profile" : "     Create A Health Profile",
+    "General Information" : "General Information",
+    "First name & Last name" : "First name & Last name",
+    "Jessica Jung" : "Jessica Jung",
+    "Age" : "Age",
+    "26-31" : "26-31",
+    "Gender" : "Gender",
+    "Male" : "Male",
+    "Date of birth" : "Date of Birth",
+    "Your Job" : "Your Job",
+    "Engineer" : "Engineer",
+    "Are You Married?" : "Are You Married?",
+    " Where do you live?": " Where do you live?",
+    "Cairo" :"Cairo",
+    "No" : "No",
+    "Continue " : "Continue",
+    "Weight (kg)" : "Weight (kg)",
+    "Blood Group" : "Blood Group",
+    "O" : "O",
+    "Your Phone Number" : "Your Phone Number",
+    "Your Email Address" : "Your Email Address",
+    "Sarah321@gmail.com" : "Sarah321@gmail.com",
+    "What illnesses or diseases have you had in the past? " : "What illnesses or diseases have you had in the past? ",
+    "Cancer" : "Cancer",
+    "Since your initial diagnosis and treatment, have your illnesses returned?" : "Since your initial diagnosis and treatment, have your illnesses returned?",
+    "What medical care did you get for the illness?" : "What medical care did you get for the illness?",
+    "Vitamins and supplements" : "Vitamins and supplements" ,
+    "When did you first notice the disease's symptoms? " : " When did you first notice the disease's symptoms? ",
+    "Do you have any emergency medication on you?" : "Do you have any emergency medication on you?",
+    "Antibiotics" : "Antibiotics",
+    "Have you ever suffered a fracture or sprain?" : "Have you ever suffered a fracture or sprain?",
+    "If yes say what is?" : "If yes say what is?",
+    "Past Illnesses" :  "Past Illnesses" ,
+    "Do you have any chronic conditions?"  : "Do you have any chronic conditions?" ,
+    "Diabetes" : "Diabetes",
+    "Have you had any surgeries or hospitalizations in the past?" : "Have you had any surgeries or hospitalizations in the past?",
+    "Have you received all recommended vaccinations?" : "Have you received all recommended vaccinations?",
+    "Have you had any recent injuries or accidents?" : "Have you had any recent injuries or accidents?",
+    "Have you had any recent blood tests or imaging studies?" : "Have you had any recent blood tests or imaging studies?",
+    "Yes" : "Yes",
+    "Do you smoke or use any tobacco products?" : "Do you smoke or use any",
+    "Allergies and other health issues" : "Allergies and other health issues",
+    "Do you have any allergies? " : "Do you have any allergies? ",
+    "What kind of allergies do you have?" : "What kind of allergies do you have?",
+    "Eye Allergies" : "Eye Allergies" ,
+    "When was your allergy first diagnosed? " : "When was your allergy first diagnosed? " ,
+    "7 years ago" : "7 years ago",
+    "Do you have any family members with allergies? " : "Do you have any family members with allergies? ",
+    "What happens to your body when exposed to an allergen?" : "What happens to your body when exposed to an allergen?",
+    "Wheezing and difficulty breathing" : "Wheezing and difficulty breathing",
+    "Have you experienced any new allergens recently? " : "Have you experienced any new allergens recently? ",
+    "Do you have a family history of chronic diseases such as cancer, diabetes, heart disease?" : "Do you have a family history of chronic diseases such as cancer, diabetes, heart disease?",
+    "Have there been any genetic disorders or congenital disabilities in your family? " : "Have there been any genetic disorders or congenital disabilities in your family? ",
+    "Have your family members been hospitalized or had major medical procedures " : "Have your family members been hospitalized or had major medical procedures?",
+    "Have any family members passed away at a younger age due to health-related issues? " : "Have any family members passed away at a younger age due to health-related issues? ",
+    "Do you have a disabled person in your family?" : "Do you have a disabled person in your family?",
+    " Family health history" : " Family health history",
+    "Help center" : "Help center",
+    "how can we help you?" : "how can we help you?",
+    "Search..." : "Search...",
+    "FAQ" : "FAQ",
+    "Contact us" : "Contact us",
+    "Popular Topic" : "Popular Topic",
+    "General" : "General",
+    "Services" : "Services",
+    "Lorem ipsum dolor sit amet?" : "Lorem ipsum dolor sit amet?",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque congue lorem, vel tincidunt tortor placerat a. Proin ac diam quam. Aenean in sagittis magna, ut feugiat diam.":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque congue lorem, vel tincidunt tortor placerat a. Proin ac diam quam. Aenean in sagittis magna, ut feugiat diam.",
+    "Customer service" : "Customer service",
+    "website" : "website",
+    "Whatsapp" : "Whatsapp",
+    "Facebook" : "Facebook" ,
+    "Instagram" : "Instagram" ,
+    "Privacy & Policy" : "Privacy & Policy",
+    "last update: 14/08/2024" : "last update: 14/08/2024"
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
